@@ -1,0 +1,11 @@
+DEVIOCSTATS=   $(SUPPORT)/devIocStats/3-1-14dls1-0
+AUTOSAVE=      $(SUPPORT)/autosave/5-0dls4
+FEEDBACK=      $(SUPPORT)/BLfeedback/2-9-4
+QUADEM=        $(SUPPORT)/quadEM/7-0dls2
+PVLOGGING=     $(SUPPORT)/pvlogging/1-3
+GARDASOFTLED=  $(SUPPORT)/gardasoftLED/2-1
+TEC=           $(WORK)/tecPeltier
+#TEC=           $(SUPPORT)/tecPeltier/1-1
+ENZLOCUM=      $(SUPPORT)/enzLoCuM4/2-33
+BLGUI=         $(SUPPORT)/BLGui/3-12
+POSITIONER=         $(SUPPORT)/positioner/3-2-1

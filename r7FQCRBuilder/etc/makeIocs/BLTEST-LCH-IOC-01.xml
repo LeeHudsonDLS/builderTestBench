@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<FINS.FINSUDPInit ip="172.23.240.181" name="robotPLC" simulation="None"/>
+	<asyn.AsynIP name="robot_serial" port="172.23.240.182:10001"/>
+	<mitsubishiRobot.BARTRobot P="BLTEST-LCH-ROBOT-01" PORT="robotPLC" STREAMS_PORT="robot_serial" dom="BLTEST" name="ROBOT"/>
+</components>

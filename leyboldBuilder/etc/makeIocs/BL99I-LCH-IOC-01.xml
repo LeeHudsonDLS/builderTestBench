@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<asyn.AsynSerial baud="9600" bits="8" input_eos="\r\n" name="LPORT" parity="none" port="/dev/ttyUSB0" stop="1"/>
+	<!--<leybold.centerN P="BL99I-LB" PORT="CENTER" SERIALPORT="LPORT" name="LB1"/>-->
+	<leybold.centerOne P="BL99I-LB" PORT="CENTER" SERIALPORT="LPORT" name="LB1"/>
+</components>

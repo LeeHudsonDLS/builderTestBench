@@ -1,0 +1,43 @@
+#!/bin/sh
+TOP="$(cd $(dirname "$0")/../..; pwd)"
+
+# first load the paths. These have been generated from the configure/RELEASE
+# tree. If we have a -d arg then load the opi/edl paths first
+shopt -s nullglob
+unset EDMDATAFILES
+if [ "$1" = "-d" ]; then
+    for d in ${TOP}/*App/opi/edl; do
+        EDMDATAFILES="${EDMDATAFILES}${d}:"
+    done
+    EDMDATAFILES="${EDMDATAFILES}${TOP}/data:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/BLfeedback/2-9/BLfeedbackApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/IOCinfo/3-4/IOCinfoApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/elettraSY900S/2-2-1/elettraSY900SApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/femto/4-2/exampleApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/femto/4-2/femtoApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/motor/6-7-1dls9/motorApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/rackFan/2-6/rackFanApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/userIO/2-19/userIOApp/opi/edl:"
+
+    OPTS="-x -eolc"
+else
+    OPTS="-x -eolc -noedit"
+fi
+EDMDATAFILES="${EDMDATAFILES}${TOP}/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/BLfeedback/2-9/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/Cryocooler/1-0dls26/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/IOCinfo/3-4/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/asyn/4-21/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/devIocStats/3-1-14dls2-2/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/elettraSY900S/2-2-1/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/femto/4-2/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/motor/6-7-1dls9/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/pvlogging/1-2/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/rackFan/2-6/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/userIO/2-19/data"
+
+export EDMDATAFILES
+
+# Set the path to include any scripts in data dirs
+export PATH=${EDMDATAFILES}:${PATH}
+edm ${OPTS}  BL99I-LCH-IOC-01Top.edl

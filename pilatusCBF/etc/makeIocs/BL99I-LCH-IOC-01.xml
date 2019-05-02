@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<ADPilatus.pilatusDetector ADDR="0" CAMSERVER="10.10.10.100" P="BL04I-EA-PILAT-01" PORT="pilatus1.CAM" R=":cam1:" TIMEOUT="1"/>
+	<adUtil.gdaPlugins CAM="pilatus1.CAM" P="BL04I-EA-PILAT-01" PORTPREFIX="pilatus1" name="gadPilatus"/>
+</components>

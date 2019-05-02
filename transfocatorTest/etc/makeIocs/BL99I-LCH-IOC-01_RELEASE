@@ -1,0 +1,8 @@
+DEVIOCSTATS=	$(SUPPORT)/devIocStats/3-1-14dls2-4
+PVLOGGING=      $(SUPPORT)/pvlogging/1-2
+TPMAC=          $(SUPPORT)/tpmac/3-11dls13
+PMACUTIL=       $(SUPPORT)/pmacUtil/5-6-2
+AUTOSAVE=       $(SUPPORT)/autosave/5-0dls3
+#TRANSFOCATOR=   /home/jjc62351/work/transfocator
+TRANSFOCATOR=   $(SUPPORT)/transfocator/3-2
+#BL22J=          $(SUPPORT)/BL22J/1-0

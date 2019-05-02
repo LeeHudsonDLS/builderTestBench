@@ -1,0 +1,10 @@
+
+#IROBOT=     /dls_sw/work/R3.14.12.3/support/VMXiEndstationTransfer
+#FINS=        /home/jjc62351/work/FINS
+#TEC=        /home/jjc62351/work/tecPeltier
+SEM=        /home/jjc62351/work/ADJeol_JSM-IT100
+#ARAVIS=        /home/jjc62351/work/aravisGigE
+#SIMDET=     /dls_sw/prod/R3.14.12.3/support/ADSimDetector/2-5dls3
+#TRANSFOCATOR=  /home/jjc62351/work/transfocator
+#TRANSFOCATOR=  /dls_sw/prod/R3.14.12.3/support/transfocator/1-9
+FSWITCH= /home/jjc62351/work/F_Switch

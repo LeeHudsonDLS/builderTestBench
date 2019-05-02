@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<aravisGigE.aravisCamera ADDR="0" CLASS="AVT_Manta_1_44_4" ID="172.23.104.141" P="STREAK" PORT="CAM" R=":CAM:" TIMEOUT="1"/>
+	<adOpenCV.streakDetect ADDR="0" NDARRAY_ADDR="0" NDARRAY_PORT="CAM" P="STREAK" PORT="STREAK1" R=":STREAK:" TIMEOUT="1"/>
+	<ffmpegServer.ffmpegStream ADDR="0" NDARRAY_ADDR="0" NDARRAY_PORT="STREAK1" P="STREAK" PORT="MJPG1" R=":MJPG1:" TIMEOUT="1"/>
+	<ffmpegServer.ffmpegStream ADDR="0" NDARRAY_ADDR="0" NDARRAY_PORT="STREAK1" P="STREAK" PORT="MJPG2" R=":MJPG2:" TIMEOUT="1"/>
+</components>

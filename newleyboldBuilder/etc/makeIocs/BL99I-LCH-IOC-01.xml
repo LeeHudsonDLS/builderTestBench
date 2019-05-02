@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<asyn.AsynSerial baud="9600" bits="8" name="LPORT" parity="none" port="/dev/ttyUSB0" stop="1"/>
+	<leybold.centerOne P="BL99I-LB" PORT="LPORT" SCAN="10 second" name="CONE"/>
+	<!--<asyn.auto_asynRecord ADDR="0" IMAX="10" OMAX="10" P="BL99I-LCH-ASYN-01" PORT="LPORT" R=""/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB0" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB1" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB4" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TIB0" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TIB2" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB2" value="On"/>-->
+</components>

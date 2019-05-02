@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<!--<EPICS_BASE.EpicsEnvSet key="IOCSH_PS1" name="prompt" value="BL99I-MOTEST-IOC-01 &gt;"/>-->
+	<!--<EPICS_BASE.EpicsEnvSet key="EPICS_CA_MAX_ARRAY_BYTES" value="10000000"/>-->
+	<ADJeol_JSM-IT100.semDetector ADDR="0" P="BL99I-LCH-SEM-01" TIMEOUT="1" filePath="Z:\AreaDetectorTests\Test" ipAddress="172.23.72.204" maxBuffers="10" maxMemory="10" maxSizeX="10" maxSizeY="10" name="SEM1" port="22300" portName="semPort" priority="0" stack_size="0"/>
+	<!--<asyn.auto_asynRecord ADDR="0" IMAX="10" OMAX="10" P="BL99I-LCH-ASYN-01" PORT="semPortip" R=""/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB0" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB1" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB4" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TIB0" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TIB2" value="On"/>-->
+	<!--<EPICS_BASE.dbpf pv="BL99I-LCH-SEM-01:ReadStatus.SCAN" value=".5 second"/>-->
+</components>

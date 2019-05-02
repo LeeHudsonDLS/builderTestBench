@@ -1,0 +1,38 @@
+#!/bin/sh
+TOP="$(cd $(dirname "$0")/../..; pwd)"
+
+# first load the paths. These have been generated from the configure/RELEASE
+# tree. If we have a -d arg then load the opi/edl paths first
+shopt -s nullglob
+unset EDMDATAFILES
+if [ "$1" = "-d" ]; then
+    for d in ${TOP}/*App/opi/edl; do
+        EDMDATAFILES="${EDMDATAFILES}${d}:"
+    done
+    EDMDATAFILES="${EDMDATAFILES}${TOP}/data:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/BLGui/3-22/BLGuiApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/autosave/5-0dls6/asApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/gardasoftLED/2-2/gardasoftLEDApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/home/jjc62351/work/tecPeltier/tecPeltierApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/userIO/2-26/userIOApp/opi/edl:"
+
+    OPTS="-x -eolc"
+else
+    OPTS="-x -eolc -noedit"
+fi
+EDMDATAFILES="${EDMDATAFILES}${TOP}/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/ADCore/2-6dls5/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/BLGui/3-22/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/autosave/5-0dls6/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/devIocStats/3-1-14dls2-6/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/gardasoftLED/2-2/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/pvlogging/1-3/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/quadEM/9-1dls1/data"
+EDMDATAFILES="${EDMDATAFILES}:/home/jjc62351/work/tecPeltier/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/userIO/2-26/data"
+
+export EDMDATAFILES
+
+# Set the path to include any scripts in data dirs
+export PATH=${EDMDATAFILES}:${PATH}
+edm ${OPTS}  BL99I-LCH-IOC-01Top.edl

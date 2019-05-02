@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86">
+	<autosave.Autosave iocName="BL02I-EA-IOC-03" name="EA IOC 3" path="/dls_sw/i02-2/epics/autosave"/>
+	<devIocStats.devIocStatsHelper ioc="BL02I-EA-IOC-03"/>
+	<BLGui.auto_BLGui_status CALC="0" INPA="0" INPB="0" INPC="0" INPD="0" INPE="0" INPF="0" INPG="0" INPH="0" INPI="0" INPJ="0" INPK="0" INPL="0" P="BL02I-EA-TEC-01:DEVSTA" PHAS="2"/>
+	<BLGui.auto_BLGui_status CALC="0" INPA="0" INPB="0" INPC="0" INPD="0" INPE="0" INPF="0" INPG="0" INPH="0" INPI="0" INPJ="0" INPK="0" INPL="0" P="BL02I-EA-TEC-02:DEVSTA" PHAS="2"/>
+	<BLGui.auto_BLGui_status CALC="0" INPA="0" INPB="0" INPC="0" INPD="0" INPE="0" INPF="0" INPG="0" INPH="0" INPI="0" INPJ="0" INPK="0" INPL="0" P="BL02I-EA-TEC-03:DEVSTA" PHAS="2"/>
+	<asyn.AsynIP name="led" port="backlight-ctrl.diamond.ac.uk:30313"/>
+	<!--<asyn.AsynIP name="tec_serial" port="bl02i-nt-tserv-03:7009" priority="0"/>-->
+	<asyn.AsynIP name="tec_serial" port="172.23.102.220:50000" priority="0"/>
+	<asyn.AsynIP name="enz_serial" port="bl02i-nt-tserv-03:7022"/>
+	<gardasoftLED.gardasoftLED420 P="BL02I-EA-BL-01" STREAMS_PORT="led" name="backlight"/>
+	<gardasoftLED.gardasoftLED400Channel CHANNEL="1" CONTINUOUS_MAX_CURR="0.1" P="BL02I-EA-BL-01" PULSED_MAX_CURR="0.1" STREAMS_PORT="led" name="backlight_ch1"/>
+	<gardasoftLED.gardasoftLED400Channel CHANNEL="2" CONTINUOUS_MAX_CURR="0.06" P="BL02I-EA-BL-01" PULSED_MAX_CURR="0.06" STREAMS_PORT="led" name="backlight_ch2"/>
+	<gardasoftLED.gardasoftLED400Channel CHANNEL="3" CONTINUOUS_MAX_CURR="0.06" P="BL02I-EA-BL-01" PULSED_MAX_CURR="0.06" STREAMS_PORT="led" name="backlight_ch3"/>
+	<gardasoftLED.gardasoftLED400Channel CHANNEL="4" CONTINUOUS_MAX_CURR="0" P="BL02I-EA-BL-01" PULSED_MAX_CURR="0" STREAMS_PORT="led" name="backlight_ch4"/>
+	<gardasoftLED.gardasoftLED420Profile LINKPOS="ZR" P="BL02I-EA-BL-01" PROFILE="1" name="backlight_profile1"/>
+	<gardasoftLED.gardasoftLED420Profile LINKPOS="ON" P="BL02I-EA-BL-01" PROFILE="2" name="backlight_profile2"/>
+	<gardasoftLED.gardasoftLED420Profile LINKPOS="TW" P="BL02I-EA-BL-01" PROFILE="3" name="backlight_profile3"/>
+	<gardasoftLED.gardasoftLED420Profile LINKPOS="TH" P="BL02I-EA-BL-01" PROFILE="4" name="backlight_profile4"/>
+	<gardasoftLED.gardasoftLED420Profile LINKPOS="FR" P="BL02I-EA-BL-01" PROFILE="5" name="backlight_profile5"/>
+	<gardasoftLED.gardasoftLED420Profile LINKPOS="FV" P="BL02I-EA-BL-01" PROFILE="6" name="backlight_profile6"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="1" P="BL02I-EA-BL-01" PROFILE="1" name="backlight_profile1_ch1"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="2" P="BL02I-EA-BL-01" PROFILE="1" name="backlight_profile1_ch2"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="3" P="BL02I-EA-BL-01" PROFILE="1" name="backlight_profile1_ch3"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="4" P="BL02I-EA-BL-01" PROFILE="1" name="backlight_profile1_ch4"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="1" P="BL02I-EA-BL-01" PROFILE="2" name="backlight_profile2_ch1"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="2" P="BL02I-EA-BL-01" PROFILE="2" name="backlight_profile2_ch2"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="3" P="BL02I-EA-BL-01" PROFILE="2" name="backlight_profile2_ch3"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="4" P="BL02I-EA-BL-01" PROFILE="2" name="backlight_profile2_ch4"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="1" P="BL02I-EA-BL-01" PROFILE="3" name="backlight_profile3_ch1"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="2" P="BL02I-EA-BL-01" PROFILE="3" name="backlight_profile3_ch2"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="3" P="BL02I-EA-BL-01" PROFILE="3" name="backlight_profile3_ch3"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="4" P="BL02I-EA-BL-01" PROFILE="3" name="backlight_profile3_ch4"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="1" P="BL02I-EA-BL-01" PROFILE="4" name="backlight_profile4_ch1"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="2" P="BL02I-EA-BL-01" PROFILE="4" name="backlight_profile4_ch2"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="3" P="BL02I-EA-BL-01" PROFILE="4" name="backlight_profile4_ch3"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="4" P="BL02I-EA-BL-01" PROFILE="4" name="backlight_profile4_ch4"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="1" P="BL02I-EA-BL-01" PROFILE="5" name="backlight_profile5_ch1"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="2" P="BL02I-EA-BL-01" PROFILE="5" name="backlight_profile5_ch2"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="3" P="BL02I-EA-BL-01" PROFILE="5" name="backlight_profile5_ch3"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="4" P="BL02I-EA-BL-01" PROFILE="5" name="backlight_profile5_ch4"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="1" P="BL02I-EA-BL-01" PROFILE="6" name="backlight_profile6_ch1"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="2" P="BL02I-EA-BL-01" PROFILE="6" name="backlight_profile6_ch2"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="3" P="BL02I-EA-BL-01" PROFILE="6" name="backlight_profile6_ch3"/>
+	<gardasoftLED.gardasoftLED420ProfileChannel CHANNEL="4" P="BL02I-EA-BL-01" PROFILE="6" name="backlight_profile6_ch4"/>
+	<quadEM.TetrAMM IP="172.23.102.85:10001" P="BL02I-EA-XBPM-01" PORT="XBPM1.DRV" QSIZE="20" R=":DRV:"/>
+	<!--<quadEM.TetrAMM IP="172.23.102.86:10001" P="BL02I-EA-XBPM-02" PORT="XBPM2.DRV" QSIZE="20" R=":DRV:"/>-->
+	<!--<enzLoCuM4.enzLoCuM4 adr="01" device="BL02I-EA-DIST-01" gda_desc="Dissector Current Amp" gda_name="DIST.AMP" name="ENZ" port="enz_serial"/>-->
+	<quadEM.statPlugins NDARRAY_PORT="XBPM1.DRV" P="BL02I-EA-XBPM-01" PORTPREFIX="XBPM1.STATS" STAT_NCHAN="1000" STAT_XSIZE="10000"/>
+	<!--<quadEM.statPlugins NDARRAY_PORT="XBPM2.DRV" P="BL02I-EA-XBPM-02" PORTPREFIX="XBPM2.STATS" STAT_NCHAN="1000" STAT_XSIZE="10000"/>-->
+	<quadEM.arrayPlugins NDARRAY_PORT="XBPM1.DRV" P="BL02I-EA-XBPM-01" PORTPREFIX="XBPM1.ARRAYS"/>
+	<!--<quadEM.arrayPlugins NDARRAY_PORT="XBPM2.DRV" P="BL02I-EA-XBPM-02" PORTPREFIX="XBPM2.ARRAYS"/>-->
+	<quadEM.quadEM_TimeSeries NDARRAY_PORT="XBPM1.DRV" NUM_FREQ="1024" NUM_TS="2048" P="BL02I-EA-XBPM-01" PORT="XBPM1.TS" R=":DRV:"/>
+	<!--<BLfeedback.feedback AUTOPV="FE04I-PS-SHTR-02:STA" AUTOPV2=" " DRVH="0.5" DRVL="-0.5" HOPR="100" INP="BL03I-EA-XBPM-01:PosY:MeanValue_RBV" KD="0" KI="200" KP="2" LOPR="-100" OUT="BL03I-MO-DCM-01:PITCH" P="BL03I-MO-DCM-01" PID=":FDBK1" PREC="5" SCAN=".1 second" name="FDBK1"/>-->
+	<!--<BLfeedback.feedback AUTOPV="FE04I-PS-SHTR-02:STA" AUTOPV2=" " DRVH="0.5" DRVL="-0.5" HOPR="100" INP="BL03I-EA-XBPM-01:PosX:MeanValue_RBV" KD="0" KI="200" KP="2" LOPR="-100" OUT="BL03I-MO-DCM-01:ROLL" P="BL03I-MO-DCM-01" PID=":FDBK2" PREC="5" SCAN=".1 second" name="FDBK2"/>-->
+	<!--<BLfeedback.feedback AUTOPV="FE04I-PS-SHTR-02:STA" AUTOPV2=" " DRVH="0.5" DRVL="-0.5" HOPR="100" INP="BL03I-EA-XBPM-02:PosY:MeanValue_RBV" KD="0" KI="200" KP="2" LOPR="-100" OUT="BL03I-MO-DCM-01:PITCH" P="BL03I-MO-DCM-01" PID=":FDBK3" PREC="5" SCAN=".1 second" name="FDBK3"/>-->
+	<!--<BLfeedback.feedback AUTOPV="FE04I-PS-SHTR-02:STA" AUTOPV2=" " DRVH="0.5" DRVL="-0.5" HOPR="100" INP="BL03I-EA-XBPM-02:PosX:MeanValue_RBV" KD="0" KI="200" KP="2" LOPR="-100" OUT="BL03I-MO-DCM-01:ROLL" P="BL03I-MO-DCM-01" PID=":FDBK4" PREC="5" SCAN=".1 second" name="FDBK4"/>-->
+	<pvlogging.PvLogging name="EA3.PVLOG"/>
+	<tecPeltier.tecPeltier ADDR="1" P="BL02I-EA-TEC-01" PORT="tec_serial" SCAN="1 second" name="TEC1"/>
+	<tecPeltier.tecPeltier ADDR="3" P="BL02I-EA-TEC-02" PORT="tec_serial" SCAN="1 second" name="TEC2"/>
+	<tecPeltier.tecPeltier ADDR="5" P="BL02I-EA-TEC-03" PORT="tec_serial" SCAN="1 second" name="TEC3"/>
+</components>

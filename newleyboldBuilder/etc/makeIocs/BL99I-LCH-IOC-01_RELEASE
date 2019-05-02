@@ -1,0 +1,2 @@
+ASYN=           $(SUPPORT)/asyn/4-26
+LEYBOLD=        /dls_sw/work/R3.14.12.3/support/leybold
