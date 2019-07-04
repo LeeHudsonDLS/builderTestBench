@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <components arch="linux-x86_64">
 	<!--<devIocStats.devIocStatsHelper ioc="BL99I-LCH-IOC-01" name="LH1"/>-->
-	<aravisGigE.aravisCamera ADDR="0" CLASS="AVT_Manta_1_44_4" ID="172.23.240.132" P="BL99I-LCH-OAV-01" PORT="OAV.CAM" R=":CAM:" TIMEOUT="1"/>
+	<aravisGigE.aravisCamera ADDR="0" CLASS="AVT_Prosilica_GT5120" ID="10.81.6.4" P="BL99I-LCH-OAV-01" PORT="OAV.CAM" R=":CAM:" TIMEOUT="1"/>
 	<adUtil.gdaPlugins CAM="OAV.CAM" HTTP_PORT="8080" P="BL99I-LCH-OAV-01" PORTPREFIX="OAV" XSIZE="1936" YSIZE="1216" name="gdaOAV1"/>
 </components>

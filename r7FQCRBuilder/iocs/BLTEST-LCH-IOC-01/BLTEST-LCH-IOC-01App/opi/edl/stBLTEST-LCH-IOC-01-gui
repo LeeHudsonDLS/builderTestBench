@@ -25,4 +25,4 @@ export EDMDATAFILES
 
 # Set the path to include any scripts in data dirs
 export PATH=${EDMDATAFILES}:${PATH}
-edm ${OPTS}  BLTEST-LCH-IOC-01Top.edl
+edm ${OPTS}  

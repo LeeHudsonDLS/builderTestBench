@@ -1,6 +1,12 @@
 <?xml version="1.0" ?>
 <components arch="linux-x86_64">
-	<asyn.AsynSerial baud="9600" bits="8" input_eos="\r\n" name="LPORT" parity="none" port="/dev/ttyUSB0" stop="1"/>
-	<!--<leybold.centerN P="BL99I-LB" PORT="CENTER" SERIALPORT="LPORT" name="LB1"/>-->
-	<leybold.centerOne P="BL99I-LB" PORT="CENTER" SERIALPORT="LPORT" name="LB1"/>
+	<!--<asyn.AsynSerial baud="9600" bits="8" name="LPORT" parity="none" port="/dev/ttyUSB0" stop="1"/>-->
+	<asyn.AsynIP baud="9600" bits="8" name="LPORT" parity="none" port="ws181.diamond.ac.uk:8000" stop="1"/>
+	<leybold.centerOne P="BL99I-LCH-LB-01" PORT="LPORT" SCAN=".2 second"/>
+	<asyn.auto_asynRecord ADDR="0" IMAX="10" OMAX="10" P="BL99I-LCH-ASYN-01" PORT="LPORT" R=""/>
+	<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB0" value="On"/>
+	<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB1" value="On"/>
+	<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TB4" value="On"/>
+	<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TIB0" value="On"/>
+	<EPICS_BASE.dbpf pv="BL99I-LCH-ASYN-01.TIB2" value="On"/>
 </components>

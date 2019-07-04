@@ -218,7 +218,7 @@ y 66
 bgColor index 3
 botShadowColor index 0
 displayFileName {
-  0 "AVT_Manta_1_44_4.edl"
+  0 "AVT_Prosilica_GT5120.edl"
   1 "NDROI.edl"
   2 "NDStats.edl"
   3 "NDStdArrays.edl"

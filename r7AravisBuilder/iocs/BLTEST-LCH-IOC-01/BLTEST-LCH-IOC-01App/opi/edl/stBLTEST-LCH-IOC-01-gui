@@ -10,17 +10,17 @@ if [ "$1" = "-d" ]; then
         EDMDATAFILES="${EDMDATAFILES}${d}:"
     done
     EDMDATAFILES="${EDMDATAFILES}${TOP}/data:"
-    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/adUtil/2-19/adUtilApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/adUtil/2-21/adUtilApp/opi/edl:"
 
     OPTS="-x -eolc"
 else
     OPTS="-x -eolc -noedit"
 fi
 EDMDATAFILES="${EDMDATAFILES}${TOP}/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ADCore/3-4dls1/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/adUtil/2-19/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/aravisGigE/3-0dls1-2/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ffmpegServer/3-1dls2-2/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ADCore/3-4dls2/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/adUtil/2-21/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/work/R3.14.12.7/support/aravisGigE/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ffmpegServer/3-1dls2-3/data"
 
 export EDMDATAFILES
 

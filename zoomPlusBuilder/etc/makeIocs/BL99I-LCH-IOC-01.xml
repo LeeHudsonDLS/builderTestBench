@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<!--<EPICS_BASE.EpicsEnvSet key="IOCSH_PS1" name="prompt" value="BL99I-MOTEST-IOC-01 &gt;"/>-->
+	<!--<EPICS_BASE.EpicsEnvSet key="EPICS_CA_MAX_ARRAY_BYTES" value="10000000"/>-->
+	<asyn.AsynSerial baud="9600" bits="8" name="FZOOM.PORT" noProcessEos="False" parity="none" port="/dev/ttyUSB0" simulation="None" stop="2"/>
+	<asyn.AsynIP name="bull" port="shit"/>
+	<laserPuckPointer.laserPuckPointer BL="BL99I" DEMAND_IN="test" P="BL425" PORT="bull" ROBOT="tob" SCAN=".1 second" VERS="1-0" name="LPP"/>
+	<fzoom.fPlusZoom P="BL99I-FZOOM-01" SCAN="1 second" name="test" port="FZOOM.PORT"/>
+</components>
