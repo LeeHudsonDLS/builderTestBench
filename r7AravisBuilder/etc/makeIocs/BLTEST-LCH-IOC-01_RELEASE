@@ -1,3 +1,4 @@
 DEVIOCSTATS=   $(SUPPORT)/devIocStats/3-1-14dls3-0
-ARAVISGIGE=    /dls_sw/work/R3.14.12.7/support/aravisGigE
-ADUTIL=        $(SUPPORT)/adUtil/2-21
+ARAVISGIGE=    /home/jjc62351/work/aravisGigE
+#ADUTIL=        $(SUPPORT)/adUtil/2-21
+FFMPEGSERVER=   /dls_sw/prod/R3.14.12.7/support/ffmpegServer/3-1dls2-5
