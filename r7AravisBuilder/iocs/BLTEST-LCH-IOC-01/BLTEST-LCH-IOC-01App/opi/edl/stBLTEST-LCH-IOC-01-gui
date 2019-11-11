@@ -10,6 +10,8 @@ if [ "$1" = "-d" ]; then
         EDMDATAFILES="${EDMDATAFILES}${d}:"
     done
     EDMDATAFILES="${EDMDATAFILES}${TOP}/data:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/adPython/2-1-1/adPythonApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/adUtil/2-24/adUtilApp/opi/edl:"
 
     OPTS="-x -eolc"
 else
@@ -17,7 +19,9 @@ else
 fi
 EDMDATAFILES="${EDMDATAFILES}${TOP}/data"
 EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ADCore/3-6dls1/data"
-EDMDATAFILES="${EDMDATAFILES}:/home/jjc62351/work/aravisGigE/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/adPython/2-1-1/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/adUtil/2-24/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/aravisGigE/3-0dls1-8/data"
 EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ffmpegServer/3-1dls2-5/data"
 
 export EDMDATAFILES

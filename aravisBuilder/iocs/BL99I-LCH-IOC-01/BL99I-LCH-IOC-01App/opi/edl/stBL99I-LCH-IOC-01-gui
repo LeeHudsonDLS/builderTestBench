@@ -10,21 +10,17 @@ if [ "$1" = "-d" ]; then
         EDMDATAFILES="${EDMDATAFILES}${d}:"
     done
     EDMDATAFILES="${EDMDATAFILES}${TOP}/data:"
-    EDMDATAFILES="${EDMDATAFILES}/home/jjc62351/work/adOpenCV/adOpenCVApp/opi/edl:"
-    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/aravisGigE/0-1-15dls8/aravisGigEApp/opi/edl:"
 
     OPTS="-x -eolc"
 else
     OPTS="-x -eolc -noedit"
 fi
 EDMDATAFILES="${EDMDATAFILES}${TOP}/data"
-EDMDATAFILES="${EDMDATAFILES}:/home/jjc62351/work/adOpenCV/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/aravisGigE/0-1-15dls8/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/areaDetector/1-9dls4/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/asyn/4-21/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/ADCore/2-6dls5/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/aravisGigE/2-1dls9/data"
 
 export EDMDATAFILES
 
 # Set the path to include any scripts in data dirs
 export PATH=${EDMDATAFILES}:${PATH}
-edm ${OPTS}  BL99I-LCH-IOC-01Top.edl
+edm ${OPTS}  OAV.edl

@@ -10,9 +10,8 @@ if [ "$1" = "-d" ]; then
         EDMDATAFILES="${EDMDATAFILES}${d}:"
     done
     EDMDATAFILES="${EDMDATAFILES}${TOP}/data:"
-    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/autosave/5-0dls6/asApp/opi/edl:"
-    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/motor/6-9dls14/motorApp/opi/edl:"
-    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.3/support/pmac/2-0-beta8/pmacApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/motor/6-10-1dls1-1/motorApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/pmac/2-4-8/pmacApp/opi/edl:"
     EDMDATAFILES="${EDMDATAFILES}/home/jjc62351/work/smargon/smargonApp/opi/edl:"
 
     OPTS="-x -eolc"
@@ -20,12 +19,9 @@ else
     OPTS="-x -eolc -noedit"
 fi
 EDMDATAFILES="${EDMDATAFILES}${TOP}/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/BL03I/2017-Run5-2/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/autosave/5-0dls6/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/devIocStats/3-1-14dls2-4/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/motor/6-9dls14/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/pmac/2-0-beta8/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.3/support/pvlogging/1-3/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/motor/6-10-1dls1-1/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/pmac/2-4-8/data"
+EDMDATAFILES="${EDMDATAFILES}:/home/jjc62351/work/smargon/data"
 
 export EDMDATAFILES
 

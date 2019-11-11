@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<EPICS_BASE.EpicsEnvSet key="EPICS_CA_MAX_ARRAY_BYTES" value="32000000"/>
+	<pmac.pmacAsynIPPort IP="172.23.240.99" name="CLIP01Port"/>
+	<pmac.GeoBrick MovingPoll="50" P="BLTEST-MO-CLIP-01" Port="CLIP01Port" name="CLIP01"/>
+	<pmac.dls_pmac_asyn_motor ADDR="1" DESC="a1" DHLM="15" DLLM="-14.5" DTYP="asynMotor" EGU="mm" M=":A1" MRES="0.0005" P="BLTEST-MO-CLIP-01" PORT="CLIP01" PREC="4" SPORT="CLIP01Port" TWV="0.1" VELO="0.3"/>
+	<pmac.dls_pmac_asyn_motor ADDR="2" DESC="a2" DHLM="15" DLLM="-14.5" EGU="mm" M=":A2" MRES="0.0005" P="BLTEST-MO-CLIP-01" PORT="CLIP01" PREC="4" SPORT="CLIP01Port" TWV="0.1" VELO="0.3"/>
+	<BL11K.benderMove PRE_POS="0.989" motor="BLTEST-MO-CLIP-01:A1" name="PRE1"/>
+	<BL11K.benderMove PRE_POS="0.666" motor="BLTEST-MO-CLIP-01:A2" name="PRE2"/>
+</components>

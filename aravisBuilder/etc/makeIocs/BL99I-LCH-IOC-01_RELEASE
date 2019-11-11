@@ -1,6 +1,5 @@
-#DEVIOCSTATS=   $(SUPPORT)/devIocStats/3-1-14dls2-4
-#ARAVISGIGE=    $(SUPPORT)/aravisGigE/2-1dls10
-ARAVISGIGE = $(SUPPORT)/aravisGigE/0-1-15dls8
-#ADUTIL=        $(SUPPORT)/adUtil/2-17
-#CMSION=         /dls_sw/prod/R3.14.12.3/support/streamDevice/2-5dls2
-ADOPENCV=        /home/jjc62351/work/adOpenCV
+AUTOSAVE=      $(SUPPORT)/autosave/5-0dls5
+DEVIOCSTATS=   $(SUPPORT)/devIocStats/3-1-14dls2-4
+ARAVISGIGE=    $(SUPPORT)/aravisGigE/2-1dls9
+FFMPEGSERVER=  $(SUPPORT)/ffmpegServer/3-1dls1-5
+

@@ -1,17 +1,7 @@
 <?xml version="1.0" ?>
 <components arch="linux-x86_64">
-	<!--<devIocStats.devIocStatsHelper ioc="BL99I-LCH-IOC-01" name="LH1"/>-->
-	<aravisGigE.aravisCamera ADDR="0" CLASS="AVT_Manta_1_44_4" ID="172.23.240.251" P="BL99I-LCH-OAV-01" PORT="OAV.CAM" R=":CAM:" TIMEOUT="10"/>
-	<ADCore.NDOverlay NDARRAY_PORT="OAV.CAM" P="BL99I-LCH-OAV-01" PORT="OAV.OVR" R=":OVR:" TIMEOUT="10"/>
-	<ADCore.NDCodec NDARRAY_PORT="OAV.OVR" P="BL99I-LCH-OAV-01" PORT="OAV.CODEC" R=":CODEC:" TIMEOUT="10"/>
-	<ADCore.NDFileHDF5 ADDR="0" NDARRAY_PORT="OAV.CODEC" P="BL99I-LCH-OAV-01" PORT="OAV.HDF" R=":HDF5:" TIMEOUT="10"/>
-	<ADCore.NDFileTIFF NDARRAY_PORT="OAV.CAM" P="BL99I-LCH-OAV-01" PORT="OAV.TIFF" R=":TIFF:" TIMEOUT="10"/>
-	<ffmpegServer.ffmpegStream NDARRAY_PORT="OAV.OVR" P="BL99I-LCH-OAV-01" PORT="OAV.FFMPEG" R=":FFMPEG:"/>
-	<EPICS_BASE.dbpf pv="BL99I-LCH-OAV-01:TIFF:EnableCallbacks" value="Enable"/>
-	<EPICS_BASE.dbpf pv="BL99I-LCH-OAV-01:TIFF:BlockingCallbacks" value="Yes"/>
-	<EPICS_BASE.dbpf pv="BL99I-LCH-OAV-01:TIFF:FilePath" value="/scratch"/>
-	<EPICS_BASE.dbpf pv="BL99I-LCH-OAV-01:TIFF:FileTemplate" value="%s/%s_%d.tiff"/>
-	<EPICS_BASE.dbpf pv="BL99I-LCH-OAV-01:TIFF:AutoIncrement" value="Yes"/>
-	<EPICS_BASE.dbpf pv="BL99I-LCH-OAV-01:TIFF:AutoSave" value="Yes"/>
-	<EPICS_BASE.dbpf pv="BL99I-LCH-OAV-01:CAM:ImageMode" value="Single"/>
+	<aravisGigE.aravisCamera ADDR="0" CLASS="AVT_Manta_1_44_4" ID="172.23.240.251" P="BL99I-LCH-OAV-01" PORT="OAV.CAM" R=":CAM:" TIMEOUT="1"/>
+	<adUtil.gdaPlugins CAM="OAV.CAM" HTTP_PORT="8080" P="BL99I-LCH-OAV-01" PORTPREFIX="OAV" name="OAV.PLUGINS"/>
+	<adPython.adPythonPlugin ADDR="0" NDARRAY_PORT="OAV.CAM" P="BL99I-LCH-OAV-01" PORT="OAV.PYP" R=":PYP:" TIMEOUT="1" classname="Template"/>
+	<autosave.Autosave iocName="BLTEST-LCH-IOC-01" name="AS" path="/scratch/old"/>
 </components>

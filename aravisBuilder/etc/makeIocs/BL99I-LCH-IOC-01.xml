@@ -1,6 +1,4 @@
 <?xml version="1.0" ?>
-<components arch="linux-x86_64">
-	<aravisGigE.aravisCamera ADDR="0" CLASS="AVT_Manta_1_44_4" ID="172.23.240.132" P="BL99I-LCH-OAV-01" PORT="OAV.CAM" R=":CAM:" TIMEOUT="1"/>
-	<!--<asyn.auto_asynRecord ADDR="0" IMAX="10" OMAX="10" P="BL99I-LCH-ASYN-01" PORT="OAV.proc" R=""/>-->
-	<adOpenCV.streakDetect ADDR="0" Enabled="1" NDARRAY_ADDR="0" NDARRAY_PORT="OAV.CAM" P="BL99I-LCH-OAV-01" PORT="STREAK" R=":STREAK:" TIMEOUT="1"/>
+<components arch="linux-x86">
+	<aravisGigE.aravisCamera ADDR="0" CLASS="AVT_Manta_1_44_4" ID="172.23.240.251" P="BL99I-LCH-OAV-01" PORT="OAV.CAM" R=":CAM:" TIMEOUT="1"/>
 </components>

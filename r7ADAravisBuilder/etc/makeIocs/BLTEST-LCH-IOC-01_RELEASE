@@ -1,0 +1,7 @@
+AUTOSAVE= /dls_sw/prod/R3.14.12.7/support/autosave/5-9dls1
+DEVIOCSTATS=   $(SUPPORT)/devIocStats/3-1-14dls3-0
+ADARAVIS = /home/jjc62351/work/ADAravis
+ADUTIL=         $(SUPPORT)/adUtil/2-26
+ADPYTHON=       $(SUPPORT)/adPython/2-1-2
+
+

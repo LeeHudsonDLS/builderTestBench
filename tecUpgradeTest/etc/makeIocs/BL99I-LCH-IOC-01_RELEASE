@@ -1,11 +1,3 @@
 # Place any example specific dependencies here
-DEVIOCSTATS=   $(SUPPORT)/devIocStats/3-1-14dls2-6
-AUTOSAVE=      $(SUPPORT)/autosave/5-0dls6
-FEEDBACK=      $(SUPPORT)/BLfeedback/2-16
-QUADEM=        $(SUPPORT)/quadEM/9-1dls1
-PVLOGGING=     $(SUPPORT)/pvlogging/1-3
-GARDASOFTLED=  $(SUPPORT)/gardasoftLED/2-2
-#TEC=          $(SUPPORT)/tecPeltier/1-2
+ASYN=          /dls_sw/prod/R3.14.12.7/support/asyn/4-34
 TEC=           /home/jjc62351/work/tecPeltier
-BLGUI=         $(SUPPORT)/BLGui/3-22
-ENZLOCUM=      $(SUPPORT)/enzLoCuM4/2-34

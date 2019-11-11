@@ -1,0 +1,2 @@
+PMAC=           $(SUPPORT)/pmac/2-4-10
+BL11K=          /home/jjc62351/work/BL11K/supportModule/BL11K
