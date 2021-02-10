@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<EPICS_BASE.EpicsEnvSet key="IOCSH_PS1" name="prompt" value="BL99I-MO-IOC-11 &gt;"/>
+	<EPICS_BASE.EpicsEnvSet key="EPICS_CA_MAX_ARRAY_BYTES" value="32000000"/>
+	<utility.pingWait ip="172.23.240.99"/>
+	<pmac.pmacAsynIPPort IP="172.23.240.99" name="BRICK11Port"/>
+	<pmac.GeoBrick MovingPoll="50" P="BL99I-MO-STEP-11" Port="BRICK11Port" name="BRICK11"/>
+	<pmac.dls_pmac_asyn_motor ADDR="1" DESC="Slits S4 X Centre" DHLM="13" DLLM="-13" DTYP="asynMotor" EGU="mm" M=":XCENTRE" MRES="0.01" P="BL99I-AL-SLITS-04" PORT="BRICK11" PREC="6" SPORT="BRICK11Port" TWV="0.1" VELO="1" name="S4.XCEN"/>
+	<pmac.dls_pmac_asyn_motor ADDR="2" DESC="Slits S4 X Size" DHLM="13" DLLM="-13" EGU="mm" M=":XSIZE" MRES="0.01" P="BL99I-AL-SLITS-04" PORT="BRICK11" PREC="6" SPORT="BRICK11Port" TWV="0.1" VELO="1" name="S4.XSIZE"/>
+	<pmac.dls_pmac_asyn_motor ADDR="3" DESC="Slits S4 Y Centre" DHLM="13" DLLM="-13" EGU="mm" M=":YCENTRE" MRES="0.01" P="BL99I-AL-SLITS-04" PORT="BRICK11" PREC="6" SPORT="BRICK11Port" TWV="0.1" VELO="1" name="S4.YCEN"/>
+	<!--<pmac.dls_pmac_asyn_motor ADDR="4" DESC="Slits S4 Y Size" DHLM="13" DLLM="-13" EGU="mm" M=":YSIZE" MRES="0.000001" P="BL99I-AL-SLITS-04" PORT="BRICK11" PREC="6" SPORT="BRICK11Port" TWV="0.1" VELO="1" name="S4.YSIZE"/>-->
+	<BL11K.benderMove PRE_POS="1" motor="BL99I-AL-SLITS-04:XCENTRE" name="BMOV"/>
+	<!--<pmac.CS CS="2" Controller="BRICK11" name="BRICK_11_CS_2"/>-->
+	<!--<pmac.dls_pmac_cs_asyn_motor ADDR="7" DESC="Centre" EGU="mm" M=":XCENTRE_V" MRES="0.0001" P="BL99I-AL-SLITS-04" PORT="BRICK_11_CS_2" PREC="5" TWV="0.1" VELO="1" name="S4.XCENV"/>-->
+	<!--<pmac.dls_pmac_cs_asyn_motor ADDR="8" DESC="Centre" EGU="mm" M=":XSIZE_V" MRES="0.0001" P="BL99I-AL-SLITS-04" PORT="BRICK_11_CS_2" PREC="5" TWV="0.1" VELO="1" name="S4.XGAPV"/>-->
+</components>

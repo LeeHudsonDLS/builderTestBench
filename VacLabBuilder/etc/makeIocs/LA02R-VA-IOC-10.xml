@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<!--<EPICS_BASE.EpicsEnvSet key="IOCSH_PS1" name="prompt" value="BL99I-MOTEST-IOC-01 &gt;"/>-->
+	<dlsPLC.vacValve addr="60" device="BL99I-LCH-TEST-01:VALVE" name="TESTV" port="testp" vlvcc="test"/>
+</components>

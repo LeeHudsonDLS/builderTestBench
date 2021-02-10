@@ -1,0 +1,7 @@
+
+BUSY=        $(SUPPORT)/busy/1-7dls1
+CALC=		$(SUPPORT)/calc/3-7
+ASYN=		$(SUPPORT)/asyn/4-34
+STREAMS=	$(SUPPORT)/streamDevice/2-5dls9
+FINS=       $(SUPPORT)/FINS/3-8
+VALVE=      $(SUPPORT)/dlsPLC/1-53

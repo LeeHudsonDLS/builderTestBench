@@ -232,12 +232,12 @@ noScroll
 numDsps 6
 sizeOfs 5
 symbols {
-  0 "P=BL99I-LCH-OAV-01,R=:ROI1:,label=roi1"
-  1 "P=BL99I-LCH-OAV-01,R=:ROI2:,label=roi2"
-  2 "P=BL99I-LCH-OAV-01,R=:ROI3:,label=roi3"
-  3 "P=BL99I-LCH-OAV-01,R=:ROI4:,label=roi4"
-  4 "P=BL99I-LCH-OAV-01,R=:ROI5:,label=roi5"
-  5 "P=BL99I-LCH-OAV-01,R=:ROI6:,label=roi6"
+  0 "P=BLTEST-LCH-OAV-01,R=:ROI1:,label=roi1"
+  1 "P=BLTEST-LCH-OAV-01,R=:ROI2:,label=roi2"
+  2 "P=BLTEST-LCH-OAV-01,R=:ROI3:,label=roi3"
+  3 "P=BLTEST-LCH-OAV-01,R=:ROI4:,label=roi4"
+  4 "P=BLTEST-LCH-OAV-01,R=:ROI5:,label=roi5"
+  5 "P=BLTEST-LCH-OAV-01,R=:ROI6:,label=roi6"
 }
 topShadowColor index 0
 endObjectProperties

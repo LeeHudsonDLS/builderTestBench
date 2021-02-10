@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86">
+	<devIocStats.devIocStatsHelper ioc="BL16B-MO-IOC-20" name="MOIOC20"/>
+	<pvlogging.PvLogging/>
+	<tpmac.pmacAsynIPPort IP="172.23.86.220" name="BRICK20port"/>
+	<tpmac.GeoBrick NAxes="8" Port="BRICK20port" name="BRICK20"/>
+	<transfocator.transfocator AXIS="5" P="BL16B-MO-FSWT-01" PLC="20" PLC_HOME="23" PLC_IN="22" PLC_MASK="24" PLC_OUT="21" PORT="BRICK20port" Q="" name="FSWITCH"/>
+</components>

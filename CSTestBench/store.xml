@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<pmac.pmacAsynIPPort IP="172.23.240.99" name="BRICK19Port"/>
+	<!--<asyn.auto_asynRecord ADDR="0" IMAX="10" OMAX="0" P="BL99I-LCH-ASYN-01" PORT="BRICK19Port" R="" name="ASYN1"/>-->
+	<pmac.GeoBrick IdlePoll="1000" NAXES="8" P="BL99I-LCH-STEP-19" Port="BRICK19Port" name="BRICK19"/>
+	<pmac.dls_pmac_asyn_motor ADDR="1" DESC="" EGU="mm" M=":X" MRES="0.0001" P="BL99I-LCH-SGON-01" PORT="BRICK19" PREC="4" SPORT="BRICK19Port" TWV="0.1" VELO="1" name="SGON.X"/>
+	<pmac.dls_pmac_asyn_motor ADDR="2" DESC="" EGU="mm" M=":Y" MRES="0.0001" P="BL99I-LCH-SGON-01" PORT="BRICK19" PREC="4" SPORT="BRICK19Port" TWV="0.1" VELO="1" name="SGON.Y"/>
+	<pmac.dls_pmac_asyn_motor ADDR="3" DESC="" EGU="mm" M=":Z" MRES="0.0001" P="BL99I-LCH-SGON-01" PORT="BRICK19" PREC="4" SPORT="BRICK19Port" TWV="0.1" VELO="1" name="SGON.Z"/>
+	<records.ao record="BL99I-LCH-SGON-01:X_STUB_OFFSET_USER"/>
+</components>

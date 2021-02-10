@@ -146,7 +146,7 @@ x 10
 y 40
 bgColor index 3
 botShadowColor index 11
-controlPv "LOC\\$(!W)tab=e:0,CAM,roi,stat,arr,proc,over,fimg,tiff,hdf,mjpg,pva,PYP"
+controlPv "LOC\\$(!W)tab=e:0,CAM,roi,stat,arr,proc,over,fimg,tiff,hdf,mjpg,pva"
 fgColor index 14
 font "arial-bold-r-12.0"
 inconsistentColor index 0
@@ -229,13 +229,12 @@ displayFileName {
   8 "NDFileHDF5.edl"
   9 "ffmpegStream.edl"
   10 "NDPvaPlugin.edl"
-  11 "adPythonTemplate.edl"
 }
 displaySource "menu"
 fgColor index 14
 filePv "LOC\\$(!W)tab"
 noScroll
-numDsps 12
+numDsps 11
 sizeOfs 5
 symbols {
   0 "P=BL99I-LCH-OAV-01,R=:CAM:,label=CAM"
@@ -249,7 +248,6 @@ symbols {
   8 "P=BL99I-LCH-OAV-01,R=:HDF5:,label=hdf"
   9 "P=BL99I-LCH-OAV-01,R=:MJPG:,label=mjpg"
   10 "P=BL99I-LCH-OAV-01,R=:PVA:,label=pva"
-  11 "P=BL99I-LCH-OAV-01,R=:PYP:,label=PYP"
 }
 topShadowColor index 0
 endObjectProperties

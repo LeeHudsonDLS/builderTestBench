@@ -1,0 +1,2625 @@
+OAV.CAM multiDevice:No canBlock:Yes autoConnect:Yes
+    enabled:Yes connected:Yes numberConnects 1
+    nDevices 0 nQueued 0 blocked:No
+    asynManagerLock:No synchronousLock:No
+    exceptionActive:No exceptionUsers 2 exceptionNotifys 0
+    traceMask:0x21 traceIOMask:0x0 traceInfoMask:0x1
+    interposeInterfaceList
+        asynOctet pinterface 0x7fc746f0d260 drvPvt 0x174e270
+    interfaceList
+        asynCommon pinterface 0x7fc746f0d970 drvPvt 0x174a200
+        asynDrvUser pinterface 0x7fc746f0d760 drvPvt 0x174a200
+        asynOctet pinterface 0x7fc746f0d880 drvPvt 0x174a200
+        asynInt32 pinterface 0x7fc746f0d940 drvPvt 0x174a200
+        asynFloat64 pinterface 0x7fc746f0d8e0 drvPvt 0x174a200
+        asynInt32Array pinterface 0x7fc746f0d820 drvPvt 0x174a200
+        asynGenericPointer pinterface 0x7fc746f0d7c0 drvPvt 0x174a200
+        asynEnum pinterface 0x7fc746f0d780 drvPvt 0x174a200
+Aravis GigE detector OAV.CAM
+  NX, NY:            1936  1216
+  Data type:         1
+Feature list
+
+      Node name: AcquisitionAbort
+          value: 
+      asynIndex: 246
+       asynName: GC_C_AcquisitionAbort
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: AcquisitionFrameCount
+          value: 1
+      asynIndex: 72
+       asynName: NIMAGES
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: AcquisitionFrameCount
+          value: 1
+      asynIndex: 138
+       asynName: GC_I_AcquisitionFrameCount
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: AcquisitionFrameRateAbs
+          value: 10.000000
+      asynIndex: 115
+       asynName: GC_D_AcquisitionFrameRateAbs
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: AcquisitionFrameRateAbs
+          value: 10.000000
+      asynIndex: 94
+       asynName: GC_FRAMERATE
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: AcquisitionFrameRateAbs
+          value: 10.000000
+      asynIndex: 75
+       asynName: ACQ_PERIOD
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: AcquisitionFrameRateLimit
+          value: 4.995279
+      asynIndex: 116
+       asynName: GC_D_AcquisitionFrameRateLimit
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: AcquisitionMode
+          value: Continuous
+      asynIndex: 69
+       asynName: IMAGE_MODE
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: AcquisitionMode
+          value: Continuous
+      asynIndex: 256
+       asynName: GC_E_AcquisitionMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 1: Continuous
+                 2: SingleFrame
+                 3: MultiFrame
+                 4: Recorder
+
+      Node name: AcquisitionStart
+          value: 
+      asynIndex: 247
+       asynName: GC_C_AcquisitionStart
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: AcquisitionStop
+          value: 
+      asynIndex: 248
+       asynName: GC_C_AcquisitionStop
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BalanceRatioAbs
+          value: Not available
+      asynIndex: 117
+       asynName: GC_D_BalanceRatioAbs
+       asynType: 3
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BalanceRatioSelector
+          value: Not available
+      asynIndex: 257
+       asynName: GC_E_BalanceRatioSelector
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BalanceWhiteAuto
+          value: Not available
+      asynIndex: 258
+       asynName: GC_E_BalanceWhiteAuto
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BalanceWhiteAutoAdjustTol
+          value: Not available
+      asynIndex: 139
+       asynName: GC_I_BalanceWhiteAutoAdjustTol
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BalanceWhiteAutoRate
+          value: Not available
+      asynIndex: 140
+       asynName: GC_I_BalanceWhiteAutoRate
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BandwidthControlMode
+          value: StreamBytesPerSecond
+      asynIndex: 259
+       asynName: GC_E_BandwidthControlMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: StreamBytesPerSecond
+                 1: SCPD
+                 2: Both
+
+      Node name: BinningHorizontal
+          value: 1
+      asynIndex: 58
+       asynName: BIN_X
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BinningHorizontal
+          value: 1
+      asynIndex: 141
+       asynName: GC_I_BinningHorizontal
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BinningVertical
+          value: 1
+      asynIndex: 59
+       asynName: BIN_Y
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BinningVertical
+          value: 1
+      asynIndex: 142
+       asynName: GC_I_BinningVertical
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BlackLevel
+          value: 4.000000
+      asynIndex: 118
+       asynName: GC_D_BlackLevel
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: BlackLevelSelector
+          value: All
+      asynIndex: 260
+       asynName: GC_E_BlackLevelSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: All
+
+      Node name: ChunkModeActive
+          value: false
+      asynIndex: 132
+       asynName: GC_B_ChunkModeActive
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: CmvExposureTimePWL1
+          value: Not available
+      asynIndex: 119
+       asynName: GC_D_CmvExposureTimePWL1
+       asynType: 3
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: CmvExposureTimePWL2
+          value: Not available
+      asynIndex: 120
+       asynName: GC_D_CmvExposureTimePWL2
+       asynType: 3
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: CmvExposureValuePWL1
+          value: Not available
+      asynIndex: 143
+       asynName: GC_I_CmvExposureValuePWL1
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: CmvExposureValuePWL2
+          value: Not available
+      asynIndex: 144
+       asynName: GC_I_CmvExposureValuePWL2
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: CmvPWLThreshold1
+          value: Not available
+      asynIndex: 145
+       asynName: GC_I_CmvPWLThreshold1
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: CmvPWLThreshold2
+          value: Not available
+      asynIndex: 146
+       asynName: GC_I_CmvPWLThreshold2
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ColorTransformationMode
+          value: Not available
+      asynIndex: 261
+       asynName: GC_E_ColorTransformationMode
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ColorTransformationSelector
+          value: Not available
+      asynIndex: 262
+       asynName: GC_E_ColorTransformationSelector
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ColorTransformationValue
+          value: Not available
+      asynIndex: 121
+       asynName: GC_D_ColorTransformationValue
+       asynType: 3
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ColorTransformationValueSelector
+          value: Not available
+      asynIndex: 263
+       asynName: GC_E_ColorTransformationValueSelector
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DSPSubregionBottom
+          value: 1216
+      asynIndex: 147
+       asynName: GC_I_DSPSubregionBottom
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DSPSubregionLeft
+          value: 0
+      asynIndex: 148
+       asynName: GC_I_DSPSubregionLeft
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DSPSubregionRight
+          value: 1936
+      asynIndex: 149
+       asynName: GC_I_DSPSubregionRight
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DSPSubregionTop
+          value: 0
+      asynIndex: 150
+       asynName: GC_I_DSPSubregionTop
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DecimationHorizontal
+          value: 1
+      asynIndex: 151
+       asynName: GC_I_DecimationHorizontal
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DecimationVertical
+          value: 1
+      asynIndex: 152
+       asynName: GC_I_DecimationVertical
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DefectMaskColumnEnable
+          value: Not available
+      asynIndex: 264
+       asynName: GC_E_DefectMaskColumnEnable
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DefectMaskEnable
+          value: Not available
+      asynIndex: 133
+       asynName: GC_B_DefectMaskEnable
+       asynType: 1
+  isImplemented: false
+    isAvailable: false
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceFirmwareVersion
+          value: 00.01.54.11026 
+      asynIndex: 56
+       asynName: FIRMWARE_VERSION
+       asynType: 4
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceFirmwareVersion
+          value: 00.01.54.11026 
+      asynIndex: 297
+       asynName: GC_S_DeviceFirmwareVersion
+       asynType: 4
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceID
+          value: 50-0503373263
+      asynIndex: 298
+       asynName: GC_S_DeviceID
+       asynType: 4
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceModelName
+          value: Manta G-235B
+      asynIndex: 53
+       asynName: MODEL
+       asynType: 4
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceModelName
+          value: Manta G-235B
+      asynIndex: 299
+       asynName: GC_S_DeviceModelName
+       asynType: 4
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DevicePartNumber
+          value: E0022572
+      asynIndex: 300
+       asynName: GC_S_DevicePartNumber
+       asynType: 4
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceScanType
+          value: Areascan
+      asynIndex: 266
+       asynName: GC_E_DeviceScanType
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Areascan
+
+      Node name: DeviceSerialNumber
+          value: Not available
+      asynIndex: 54
+       asynName: SERIAL_NUMBER
+       asynType: 4
+  isImplemented: false
+    isAvailable: false
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceTemperature
+          value: 44.250000
+      asynIndex: 89
+       asynName: TEMPERATURE_ACTUAL
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceTemperature
+          value: 44.250000
+      asynIndex: 122
+       asynName: GC_D_DeviceTemperature
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceTemperatureSelector
+          value: Main
+      asynIndex: 265
+       asynName: GC_E_DeviceTemperatureSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 1: Main
+
+      Node name: DeviceVendorName
+          value: Allied Vision Technologies
+      asynIndex: 52
+       asynName: MANUFACTURER
+       asynType: 4
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: DeviceVendorName
+          value: Allied Vision Technologies
+      asynIndex: 301
+       asynName: GC_S_DeviceVendorName
+       asynType: 4
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventAcquisitionEnd
+          value: 40001
+      asynIndex: 155
+       asynName: GC_I_EventAcquisitionEnd
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventAcquisitionRecordTrigger
+          value: 40004
+      asynIndex: 153
+       asynName: GC_I_EventAcquisitionRecordTrigger
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventAcquisitionStart
+          value: 40000
+      asynIndex: 154
+       asynName: GC_I_EventAcquisitionStart
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventError
+          value: 65535
+      asynIndex: 166
+       asynName: GC_I_EventError
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventExposureEnd
+          value: 40003
+      asynIndex: 167
+       asynName: GC_I_EventExposureEnd
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventFrameTrigger
+          value: 40002
+      asynIndex: 168
+       asynName: GC_I_EventFrameTrigger
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventFrameTriggerReady
+          value: 40018
+      asynIndex: 156
+       asynName: GC_I_EventFrameTriggerReady
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventLine1FallingEdge
+          value: 40011
+      asynIndex: 160
+       asynName: GC_I_EventLine1FallingEdge
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventLine1RisingEdge
+          value: 40010
+      asynIndex: 164
+       asynName: GC_I_EventLine1RisingEdge
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventLine2FallingEdge
+          value: 40013
+      asynIndex: 157
+       asynName: GC_I_EventLine2FallingEdge
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventLine2RisingEdge
+          value: 40012
+      asynIndex: 161
+       asynName: GC_I_EventLine2RisingEdge
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventLine3FallingEdge
+          value: 40015
+      asynIndex: 158
+       asynName: GC_I_EventLine3FallingEdge
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventLine3RisingEdge
+          value: 40014
+      asynIndex: 162
+       asynName: GC_I_EventLine3RisingEdge
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventLine4FallingEdge
+          value: 40017
+      asynIndex: 159
+       asynName: GC_I_EventLine4FallingEdge
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventLine4RisingEdge
+          value: 40016
+      asynIndex: 163
+       asynName: GC_I_EventLine4RisingEdge
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventNotification
+          value: Off
+      asynIndex: 267
+       asynName: GC_E_EventNotification
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Off
+                 1: On
+
+      Node name: EventOverflow
+          value: 65534
+      asynIndex: 169
+       asynName: GC_I_EventOverflow
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventPtpSyncLocked
+          value: 40006
+      asynIndex: 165
+       asynName: GC_I_EventPtpSyncLocked
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventPtpSyncLost
+          value: 40005
+      asynIndex: 170
+       asynName: GC_I_EventPtpSyncLost
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: EventSelector
+          value: AcquisitionStart
+      asynIndex: 268
+       asynName: GC_E_EventSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 40000: AcquisitionStart
+                 40001: AcquisitionEnd
+                 40002: FrameTrigger
+                 40003: ExposureEnd
+                 40004: AcquisitionRecordTrigger
+                 40005: PtpSyncLost
+                 40006: PtpSyncLocked
+                 40010: Line1RisingEdge
+                 40011: Line1FallingEdge
+                 40012: Line2RisingEdge
+                 40013: Line2FallingEdge
+                 40018: FrameTriggerReady
+
+      Node name: EventsEnable1
+          value: 0
+      asynIndex: 171
+       asynName: GC_I_EventsEnable1
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureAuto
+          value: Off
+      asynIndex: 100
+       asynName: GC_EXPOSURE_AUTO
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 1: Off
+                 3: Once
+                 2: Continuous
+
+      Node name: ExposureAuto
+          value: Off
+      asynIndex: 270
+       asynName: GC_E_ExposureAuto
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 1: Off
+                 3: Once
+                 2: Continuous
+
+      Node name: ExposureAutoAdjustTol
+          value: 5
+      asynIndex: 172
+       asynName: GC_I_ExposureAutoAdjustTol
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureAutoAlg
+          value: Mean
+      asynIndex: 269
+       asynName: GC_E_ExposureAutoAlg
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Mean
+                 1: FitRange
+
+      Node name: ExposureAutoMax
+          value: 500000
+      asynIndex: 175
+       asynName: GC_I_ExposureAutoMax
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureAutoMin
+          value: 28
+      asynIndex: 176
+       asynName: GC_I_ExposureAutoMin
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureAutoOutliers
+          value: 0
+      asynIndex: 173
+       asynName: GC_I_ExposureAutoOutliers
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureAutoRate
+          value: 100
+      asynIndex: 177
+       asynName: GC_I_ExposureAutoRate
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureAutoTarget
+          value: 50
+      asynIndex: 174
+       asynName: GC_I_ExposureAutoTarget
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureMode
+          value: Timed
+      asynIndex: 99
+       asynName: GC_EXPOSURE_MODE
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Timed
+                 1: TriggerWidth
+
+      Node name: ExposureMode
+          value: Timed
+      asynIndex: 272
+       asynName: GC_E_ExposureMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Timed
+                 1: TriggerWidth
+
+      Node name: ExposureModeValue
+          value: Timed
+      asynIndex: 271
+       asynName: GC_E_ExposureModeValue
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 1: Timed
+                 3: AutoOnce
+                 2: Auto
+                 5: TriggerWidth
+
+      Node name: ExposureTimeAbs
+          value: 200004.000000
+      asynIndex: 124
+       asynName: GC_D_ExposureTimeAbs
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureTimeAbs
+          value: 200004.000000
+      asynIndex: 74
+       asynName: ACQ_TIME
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureTimeIncrement
+          value: 14.000000
+      asynIndex: 123
+       asynName: GC_D_ExposureTimeIncrement
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ExposureValue
+          value: 200004
+      asynIndex: 178
+       asynName: GC_I_ExposureValue
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: FirmwareVerBuild
+          value: 11026
+      asynIndex: 179
+       asynName: GC_I_FirmwareVerBuild
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: FirmwareVerMajor
+          value: 1
+      asynIndex: 180
+       asynName: GC_I_FirmwareVerMajor
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: FirmwareVerMinor
+          value: 54
+      asynIndex: 181
+       asynName: GC_I_FirmwareVerMinor
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: FrameStartTriggerDelay
+          value: 0
+      asynIndex: 182
+       asynName: GC_I_FrameStartTriggerDelay
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Gain
+          value: 0.000000
+      asynIndex: 57
+       asynName: GAIN
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Gain
+          value: 0.000000
+      asynIndex: 127
+       asynName: GC_D_Gain
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GainAuto
+          value: Off
+      asynIndex: 101
+       asynName: GC_GAIN_AUTO
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 1: Off
+                 3: Once
+                 2: Continuous
+
+      Node name: GainAutoAdjustTol
+          value: 5
+      asynIndex: 183
+       asynName: GC_I_GainAutoAdjustTol
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GainAutoMax
+          value: 40.000000
+      asynIndex: 125
+       asynName: GC_D_GainAutoMax
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GainAutoMin
+          value: 0.000000
+      asynIndex: 126
+       asynName: GC_D_GainAutoMin
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GainAutoOutliers
+          value: 0
+      asynIndex: 184
+       asynName: GC_I_GainAutoOutliers
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GainAutoRate
+          value: 100
+      asynIndex: 185
+       asynName: GC_I_GainAutoRate
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GainAutoTarget
+          value: 50
+      asynIndex: 186
+       asynName: GC_I_GainAutoTarget
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GainSelector
+          value: All
+      asynIndex: 273
+       asynName: GC_E_GainSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: All
+
+      Node name: Gamma
+          value: 1.000000
+      asynIndex: 128
+       asynName: GC_D_Gamma
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GevSCPSPacketSize
+          value: 1500
+      asynIndex: 187
+       asynName: GC_I_GevSCPSPacketSize
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GevTimestampControlLatch
+          value: 
+      asynIndex: 249
+       asynName: GC_C_GevTimestampControlLatch
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GevTimestampControlReset
+          value: 
+      asynIndex: 250
+       asynName: GC_C_GevTimestampControlReset
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GevTimestampTickFrequency
+          value: 1000000000
+      asynIndex: 188
+       asynName: GC_I_GevTimestampTickFrequency
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: GevTimestampValue
+          value: 0
+      asynIndex: 189
+       asynName: GC_I_GevTimestampValue
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Height
+          value: 1216
+      asynIndex: 63
+       asynName: SIZE_Y
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Height
+          value: 1216
+      asynIndex: 191
+       asynName: GC_I_Height
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: HeightMax
+          value: 1216
+      asynIndex: 65
+       asynName: MAX_SIZE_Y
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: HeightMax
+          value: 1216
+      asynIndex: 190
+       asynName: GC_I_HeightMax
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Hue
+          value: Not available
+      asynIndex: 129
+       asynName: GC_D_Hue
+       asynType: 3
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ImageSize
+          value: 2354176
+      asynIndex: 192
+       asynName: GC_I_ImageSize
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: IrisAutoTarget
+          value: 50
+      asynIndex: 193
+       asynName: GC_I_IrisAutoTarget
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: IrisMode
+          value: Disabled
+      asynIndex: 274
+       asynName: GC_E_IrisMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Disabled
+                 1: Video
+                 2: VideoOpen
+                 3: VideoClose
+
+      Node name: IrisVideoLevel
+          value: 0
+      asynIndex: 196
+       asynName: GC_I_IrisVideoLevel
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: IrisVideoLevelMax
+          value: 110
+      asynIndex: 194
+       asynName: GC_I_IrisVideoLevelMax
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: IrisVideoLevelMin
+          value: 90
+      asynIndex: 195
+       asynName: GC_I_IrisVideoLevelMin
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LUTAddress
+          value: 196608
+      asynIndex: 197
+       asynName: GC_I_LUTAddress
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LUTBitDepthIn
+          value: 12
+      asynIndex: 198
+       asynName: GC_I_LUTBitDepthIn
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LUTBitDepthOut
+          value: 12
+      asynIndex: 199
+       asynName: GC_I_LUTBitDepthOut
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LUTEnable
+          value: false
+      asynIndex: 134
+       asynName: GC_B_LUTEnable
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LUTIndex
+          value: 0
+      asynIndex: 200
+       asynName: GC_I_LUTIndex
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LUTLoadAll
+          value: 
+      asynIndex: 251
+       asynName: GC_C_LUTLoadAll
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LUTMode
+          value: Luminance
+      asynIndex: 275
+       asynName: GC_E_LUTMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Luminance
+
+      Node name: LUTSaveAll
+          value: 
+      asynIndex: 252
+       asynName: GC_C_LUTSaveAll
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LUTSelector
+          value: LUT1
+      asynIndex: 276
+       asynName: GC_E_LUTSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: LUT1
+                 1: LUT2
+                 2: LUT3
+
+      Node name: LUTSizeBytes
+          value: 8192
+      asynIndex: 201
+       asynName: GC_I_LUTSizeBytes
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LUTValue
+          value: 4095
+      asynIndex: 202
+       asynName: GC_I_LUTValue
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LensDCDriveStrength
+          value: Not available
+      asynIndex: 203
+       asynName: GC_I_LensDCDriveStrength
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LensPIrisFrequency
+          value: Not available
+      asynIndex: 204
+       asynName: GC_I_LensPIrisFrequency
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LensPIrisNumSteps
+          value: Not available
+      asynIndex: 205
+       asynName: GC_I_LensPIrisNumSteps
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: LensPIrisPosition
+          value: Not available
+      asynIndex: 206
+       asynName: GC_I_LensPIrisPosition
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ModelName
+          value: Manta G-235B
+      asynIndex: 302
+       asynName: GC_S_ModelName
+       asynType: 4
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: NonImagePayloadSize
+          value: 0
+      asynIndex: 207
+       asynName: GC_I_NonImagePayloadSize
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: OffsetValue
+          value: 4
+      asynIndex: 208
+       asynName: GC_I_OffsetValue
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: OffsetX
+          value: 0
+      asynIndex: 60
+       asynName: MIN_X
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: OffsetX
+          value: 0
+      asynIndex: 209
+       asynName: GC_I_OffsetX
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: OffsetY
+          value: 0
+      asynIndex: 61
+       asynName: MIN_Y
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: OffsetY
+          value: 0
+      asynIndex: 210
+       asynName: GC_I_OffsetY
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: PayloadSize
+          value: 2354176
+      asynIndex: 211
+       asynName: GC_I_PayloadSize
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: PixelFormat
+          value: Mono8
+      asynIndex: 102
+       asynName: GC_PIXEL_FORMAT
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 17301505: Mono8
+                 17825797: Mono12
+                 17563654: Mono12Packed
+
+      Node name: PixelFormat
+          value: Mono8
+      asynIndex: 277
+       asynName: GC_E_PixelFormat
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 17301505: Mono8
+                 17825797: Mono12
+                 17563654: Mono12Packed
+
+      Node name: PtpAcquisitionGateTime
+          value: 0
+      asynIndex: 214
+       asynName: GC_I_PtpAcquisitionGateTime
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: PtpAcquisitionGateTimeHi
+          value: 0
+      asynIndex: 212
+       asynName: GC_I_PtpAcquisitionGateTimeHi
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: PtpAcquisitionGateTimeLo
+          value: 0
+      asynIndex: 213
+       asynName: GC_I_PtpAcquisitionGateTimeLo
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: PtpMode
+          value: Off
+      asynIndex: 278
+       asynName: GC_E_PtpMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Off
+                 1: Slave
+                 2: Master
+                 3: Auto
+
+      Node name: PtpStatus
+          value: Disabled
+      asynIndex: 279
+       asynName: GC_E_PtpStatus
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Initializing
+                 1: Faulty
+                 2: Disabled
+                 3: Listening
+                 4: PreMaster
+                 5: Master
+                 6: Passive
+                 7: Uncalibrated
+                 8: Slave
+
+      Node name: PvDummyFrameStartTriggerMode
+          value: Freerun
+      asynIndex: 280
+       asynName: GC_E_PvDummyFrameStartTriggerMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: -2147483648: Freerun
+                 -2147483647: SyncIn1
+                 -2147483646: SyncIn2
+                 -2147483643: FixedRate
+                 -2147483642: Software
+
+      Node name: PvDummyTriggerMode
+          value: Disabled
+      asynIndex: 282
+       asynName: GC_E_PvDummyTriggerMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Disabled
+                 -2147483647: SyncIn1
+                 -2147483646: SyncIn2
+                 -2147483643: FixedRate
+                 -2147483642: Software
+
+      Node name: PvDummyTriggerSelector
+          value: FrameStart
+      asynIndex: 281
+       asynName: GC_E_PvDummyTriggerSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: FrameStart
+                 3: AcquisitionStart
+                 4: AcquisitionEnd
+                 6: AcquisitionRecord
+
+      Node name: PvGainAutoMax
+          value: 400
+      asynIndex: 215
+       asynName: GC_I_PvGainAutoMax
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: PvGainAutoMin
+          value: 0
+      asynIndex: 216
+       asynName: GC_I_PvGainAutoMin
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: PvGainRaw
+          value: 0
+      asynIndex: 217
+       asynName: GC_I_PvGainRaw
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: RecorderPreEventCount
+          value: 0
+      asynIndex: 218
+       asynName: GC_I_RecorderPreEventCount
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: RestoreAllGains
+          value: Not available
+      asynIndex: 220
+       asynName: GC_I_RestoreAllGains
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: RestoreCurrentGain
+          value: Not available
+      asynIndex: 219
+       asynName: GC_I_RestoreCurrentGain
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ReverseX
+          value: false
+      asynIndex: 135
+       asynName: GC_B_ReverseX
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: ReverseY
+          value: false
+      asynIndex: 136
+       asynName: GC_B_ReverseY
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Saturation
+          value: Not available
+      asynIndex: 130
+       asynName: GC_D_Saturation
+       asynType: 3
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: SensorBits
+          value: 12
+      asynIndex: 221
+       asynName: GC_I_SensorBits
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: SensorHeight
+          value: 1216
+      asynIndex: 222
+       asynName: GC_I_SensorHeight
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: SensorType
+          value: Mono
+      asynIndex: 283
+       asynName: GC_E_SensorType
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Mono
+                 1: Bayer
+
+      Node name: SensorWidth
+          value: 1936
+      asynIndex: 223
+       asynName: GC_I_SensorWidth
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: StreamBytesPerSecond
+          value: 115000000
+      asynIndex: 224
+       asynName: GC_I_StreamBytesPerSecond
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: StreamFrameRateConstrain
+          value: true
+      asynIndex: 137
+       asynName: GC_B_StreamFrameRateConstrain
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: StreamHoldCapacity
+          value: 53
+      asynIndex: 225
+       asynName: GC_I_StreamHoldCapacity
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: StreamHoldEnable
+          value: Off
+      asynIndex: 285
+       asynName: GC_E_StreamHoldEnable
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Off
+                 1: On
+
+      Node name: StrobeDelay
+          value: 0
+      asynIndex: 226
+       asynName: GC_I_StrobeDelay
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: StrobeDuration
+          value: 0
+      asynIndex: 227
+       asynName: GC_I_StrobeDuration
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: StrobeDurationMode
+          value: Source
+      asynIndex: 284
+       asynName: GC_E_StrobeDurationMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Source
+                 1: Controlled
+
+      Node name: StrobeSource
+          value: FrameTrigger
+      asynIndex: 286
+       asynName: GC_E_StrobeSource
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 1: AcquisitionTriggerReady
+                 2: FrameTriggerReady
+                 3: FrameTrigger
+                 4: Exposing
+                 5: FrameReadout
+                 7: Acquiring
+                 8: LineIn1
+                 9: LineIn2
+
+      Node name: SyncInGlitchFilter
+          value: 0
+      asynIndex: 228
+       asynName: GC_I_SyncInGlitchFilter
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: SyncInLevels
+          value: 0
+      asynIndex: 229
+       asynName: GC_I_SyncInLevels
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: SyncInSelector
+          value: SyncIn1
+      asynIndex: 287
+       asynName: GC_E_SyncInSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: SyncIn1
+                 1: SyncIn2
+
+      Node name: SyncOutLevels
+          value: 0
+      asynIndex: 230
+       asynName: GC_I_SyncOutLevels
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: SyncOutPolarity
+          value: Normal
+      asynIndex: 288
+       asynName: GC_E_SyncOutPolarity
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Normal
+                 1: Invert
+
+      Node name: SyncOutSelector
+          value: SyncOut1
+      asynIndex: 289
+       asynName: GC_E_SyncOutSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: SyncOut1
+                 1: SyncOut2
+
+      Node name: SyncOutSource
+          value: Exposing
+      asynIndex: 290
+       asynName: GC_E_SyncOutSource
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: GPO
+                 1: AcquisitionTriggerReady
+                 2: FrameTriggerReady
+                 4: Exposing
+                 5: FrameReadout
+                 6: Imaging
+                 7: Acquiring
+                 8: LineIn1
+                 9: LineIn2
+                 12: Strobe1
+
+      Node name: Tap1_GainAdjust
+          value: Not available
+      asynIndex: 231
+       asynName: GC_I_Tap1_GainAdjust
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Tap1_OffsetAdjust
+          value: Not available
+      asynIndex: 232
+       asynName: GC_I_Tap1_OffsetAdjust
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Tap2_GainAdjust
+          value: Not available
+      asynIndex: 233
+       asynName: GC_I_Tap2_GainAdjust
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Tap2_OffsetAdjust
+          value: Not available
+      asynIndex: 234
+       asynName: GC_I_Tap2_OffsetAdjust
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Tap3_GainAdjust
+          value: Not available
+      asynIndex: 235
+       asynName: GC_I_Tap3_GainAdjust
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Tap3_OffsetAdjust
+          value: Not available
+      asynIndex: 236
+       asynName: GC_I_Tap3_OffsetAdjust
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Tap4_GainAdjust
+          value: Not available
+      asynIndex: 237
+       asynName: GC_I_Tap4_GainAdjust
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Tap4_OffsetAdjust
+          value: Not available
+      asynIndex: 238
+       asynName: GC_I_Tap4_OffsetAdjust
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: TimeStampValueHi
+          value: 0
+      asynIndex: 239
+       asynName: GC_I_TimeStampValueHi
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: TimeStampValueLo
+          value: 0
+      asynIndex: 240
+       asynName: GC_I_TimeStampValueLo
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: TriggerActivation
+          value: RisingEdge
+      asynIndex: 291
+       asynName: GC_E_TriggerActivation
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: RisingEdge
+                 1: FallingEdge
+                 2: AnyEdge
+                 3: LevelHigh
+                 4: LevelLow
+
+      Node name: TriggerDelayAbs
+          value: 0.000000
+      asynIndex: 131
+       asynName: GC_D_TriggerDelayAbs
+       asynType: 3
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: TriggerMode
+          value: On
+      asynIndex: 78
+       asynName: TRIGGER_MODE
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Off
+                 1: On
+
+      Node name: TriggerMode
+          value: On
+      asynIndex: 292
+       asynName: GC_E_TriggerMode
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Off
+                 1: On
+
+      Node name: TriggerOverlap
+          value: Off
+      asynIndex: 97
+       asynName: GC_TRIGGER_OVERLAP
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Off
+                 2: PreviousFrame
+
+      Node name: TriggerOverlap
+          value: Off
+      asynIndex: 293
+       asynName: GC_E_TriggerOverlap
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Off
+                 2: PreviousFrame
+
+      Node name: TriggerSelector
+          value: FrameStart
+      asynIndex: 294
+       asynName: GC_E_TriggerSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: FrameStart
+                 3: AcquisitionStart
+                 4: AcquisitionEnd
+                 6: AcquisitionRecord
+
+      Node name: TriggerSoftware
+          value: 
+      asynIndex: 98
+       asynName: GC_TRIGGER_SOFTWARE
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: TriggerSoftware
+          value: 
+      asynIndex: 253
+       asynName: GC_C_TriggerSoftware
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: TriggerSource
+          value: Freerun
+      asynIndex: 96
+       asynName: GC_TRIGGER_SOURCE
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Freerun
+                 1: Line1
+                 2: Line2
+                 5: FixedRate
+                 6: Software
+
+      Node name: UserSetDefaultSelector
+          value: Default
+      asynIndex: 295
+       asynName: GC_E_UserSetDefaultSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Default
+                 1: UserSet1
+                 2: UserSet2
+                 3: UserSet3
+
+      Node name: UserSetLoad
+          value: 
+      asynIndex: 254
+       asynName: GC_C_UserSetLoad
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: UserSetSave
+          value: 
+      asynIndex: 255
+       asynName: GC_C_UserSetSave
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: UserSetSelector
+          value: Default
+      asynIndex: 296
+       asynName: GC_E_UserSetSelector
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+          enums: 0: Default
+                 1: UserSet1
+                 2: UserSet2
+                 3: UserSet3
+
+      Node name: VsubValue
+          value: 0
+      asynIndex: 241
+       asynName: GC_I_VsubValue
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: WhitebalValueBlue
+          value: Not available
+      asynIndex: 242
+       asynName: GC_I_WhitebalValueBlue
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: WhitebalValueRed
+          value: Not available
+      asynIndex: 243
+       asynName: GC_I_WhitebalValueRed
+       asynType: 1
+  isImplemented: false
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Width
+          value: 1936
+      asynIndex: 62
+       asynName: SIZE_X
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: Width
+          value: 1936
+      asynIndex: 245
+       asynName: GC_I_Width
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: WidthMax
+          value: 1936
+      asynIndex: 64
+       asynName: MAX_SIZE_X
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+
+      Node name: WidthMax
+          value: 1936
+      asynIndex: 244
+       asynName: GC_I_WidthMax
+       asynType: 1
+  isImplemented: true
+    isAvailable: true
+     isReadable: true
+     isWritable: true
+Port: OAV.CAM
+  Timestamp: 2019/12/09 07:48:53.289
+  Input EOS[0]: 
+  Output EOS[0]: 
+Parameter list 0
+Number of parameters is: 303
+Parameter 0 type=string, name=PORT_NAME_SELF, value=OAV.CAM, status=0
+Parameter 1 type=string, name=ADCORE_VERSION, value=3.6.0, status=0
+Parameter 2 type=string, name=DRIVER_VERSION, value=1.1.0, status=0
+Parameter 3 type=asynInt32, name=ARRAY_SIZE_X, value=1936, status=0
+Parameter 4 type=asynInt32, name=ARRAY_SIZE_Y, value=1216, status=0
+Parameter 5 type=asynInt32, name=ARRAY_SIZE_Z, value=0, status=0
+Parameter 6 type=asynInt32, name=ARRAY_SIZE, value=2354176, status=0
+Parameter 7 type=asynInt32, name=ARRAY_NDIMENSIONS, value=0, status=0
+Parameter 8 type=asynInt32, name=ARRAY_DIMENSIONS, value is undefined
+Parameter 9 type=asynInt32, name=DATA_TYPE, value=1, status=0
+Parameter 10 type=asynInt32, name=COLOR_MODE, value=0, status=0
+Parameter 11 type=asynInt32, name=UNIQUE_ID, value=0, status=0
+Parameter 12 type=asynFloat64, name=TIME_STAMP, value=0.000000, status=0
+Parameter 13 type=asynInt32, name=EPICS_TS_SEC, value=0, status=0
+Parameter 14 type=asynInt32, name=EPICS_TS_NSEC, value=0, status=0
+Parameter 15 type=asynInt32, name=BAYER_PATTERN, value=0, status=0
+Parameter 16 type=string, name=CODEC, value is undefined
+Parameter 17 type=asynInt32, name=COMPRESSED_SIZE, value is undefined
+Parameter 18 type=asynInt32, name=ARRAY_COUNTER, value=36, status=0
+Parameter 19 type=string, name=FILE_PATH, value=, status=0
+Parameter 20 type=asynInt32, name=FILE_PATH_EXISTS, value is undefined
+Parameter 21 type=string, name=FILE_NAME, value=, status=0
+Parameter 22 type=asynInt32, name=FILE_NUMBER, value=0, status=0
+Parameter 23 type=string, name=FILE_TEMPLATE, value=%s%s_%3.3d.dat, status=0
+Parameter 24 type=asynInt32, name=AUTO_INCREMENT, value=0, status=0
+Parameter 25 type=string, name=FULL_FILE_NAME, value is undefined
+Parameter 26 type=asynInt32, name=FILE_FORMAT, value is undefined
+Parameter 27 type=asynInt32, name=AUTO_SAVE, value is undefined
+Parameter 28 type=asynInt32, name=WRITE_FILE, value=0, status=0
+Parameter 29 type=asynInt32, name=READ_FILE, value=0, status=0
+Parameter 30 type=asynInt32, name=WRITE_MODE, value is undefined
+Parameter 31 type=asynInt32, name=WRITE_STATUS, value=0, status=0
+Parameter 32 type=string, name=WRITE_MESSAGE, value=, status=0
+Parameter 33 type=asynInt32, name=NUM_CAPTURE, value is undefined
+Parameter 34 type=asynInt32, name=NUM_CAPTURED, value=0, status=0
+Parameter 35 type=asynInt32, name=CAPTURE, value=0, status=0
+Parameter 36 type=asynInt32, name=DELETE_DRIVER_FILE, value is undefined
+Parameter 37 type=asynInt32, name=FILE_LAZY_OPEN, value is undefined
+Parameter 38 type=asynInt32, name=CREATE_DIR, value=0, status=0
+Parameter 39 type=string, name=FILE_TEMP_SUFFIX, value=, status=0
+Parameter 40 type=string, name=ND_ATTRIBUTES_FILE, value=, status=0
+Parameter 41 type=asynInt32, name=ND_ATTRIBUTES_STATUS, value=1, status=0
+Parameter 42 type=string, name=ND_ATTRIBUTES_MACROS, value=, status=0
+Parameter 43 is undefined, name=ARRAY_DATA
+Parameter 44 type=asynInt32, name=ARRAY_CALLBACKS, value=1, status=0
+Parameter 45 type=asynInt32, name=POOL_MAX_BUFFERS, value is undefined
+Parameter 46 type=asynInt32, name=POOL_ALLOC_BUFFERS, value=33, status=0
+Parameter 47 type=asynInt32, name=POOL_FREE_BUFFERS, value=25, status=0
+Parameter 48 type=asynFloat64, name=POOL_MAX_MEMORY, value=17592186044416.000000, status=0
+Parameter 49 type=asynFloat64, name=POOL_USED_MEMORY, value=67.713242, status=0
+Parameter 50 type=asynInt32, name=POOL_EMPTY_FREELIST, value is undefined
+Parameter 51 type=asynInt32, name=NUM_QUEUED_ARRAYS, value=0, status=0
+Parameter 52 type=string, name=MANUFACTURER, value=Allied Vision Technologies, status=0
+Parameter 53 type=string, name=MODEL, value=Manta G-235B, status=0
+Parameter 54 type=string, name=SERIAL_NUMBER, value is undefined
+Parameter 55 type=string, name=SDK_VERSION, value=0.6.0, status=0
+Parameter 56 type=string, name=FIRMWARE_VERSION, value=00.01.54.11026 , status=0
+Parameter 57 type=asynFloat64, name=GAIN, value=0.000000, status=0
+Parameter 58 type=asynInt32, name=BIN_X, value=1, status=0
+Parameter 59 type=asynInt32, name=BIN_Y, value=1, status=0
+Parameter 60 type=asynInt32, name=MIN_X, value=0, status=0
+Parameter 61 type=asynInt32, name=MIN_Y, value=0, status=0
+Parameter 62 type=asynInt32, name=SIZE_X, value=1936, status=0
+Parameter 63 type=asynInt32, name=SIZE_Y, value=1216, status=0
+Parameter 64 type=asynInt32, name=MAX_SIZE_X, value=1936, status=0
+Parameter 65 type=asynInt32, name=MAX_SIZE_Y, value=1216, status=0
+Parameter 66 type=asynInt32, name=REVERSE_X, value=0, status=0
+Parameter 67 type=asynInt32, name=REVERSE_Y, value=0, status=0
+Parameter 68 type=asynInt32, name=FRAME_TYPE, value=0, status=0
+Parameter 69 type=asynInt32, name=IMAGE_MODE, value=2, status=0
+Parameter 70 type=asynInt32, name=NEXPOSURES, value=1, status=0
+Parameter 71 type=asynInt32, name=NEXPOSURES_COUNTER, value=0, status=0
+Parameter 72 type=asynInt32, name=NIMAGES, value=1, status=0
+Parameter 73 type=asynInt32, name=NIMAGES_COUNTER, value=36, status=0
+Parameter 74 type=asynFloat64, name=ACQ_TIME, value=0.200004, status=0
+Parameter 75 type=asynFloat64, name=ACQ_PERIOD, value=0.100000, status=0
+Parameter 76 type=asynFloat64, name=TIME_REMAINING, value=0.000000, status=0
+Parameter 77 type=asynInt32, name=STATUS, value=0, status=0
+Parameter 78 type=asynInt32, name=TRIGGER_MODE, value=1, status=0
+Parameter 79 type=asynInt32, name=ACQUIRE, value=0, status=0
+Parameter 80 type=asynInt32, name=ACQUIRE_BUSY, value=0, status=0
+Parameter 81 type=asynInt32, name=WAIT_FOR_PLUGINS, value=0, status=0
+Parameter 82 type=asynInt32, name=SHUTTER_CONTROL, value=0, status=0
+Parameter 83 type=asynInt32, name=SHUTTER_CONTROL_EPICS, value is undefined
+Parameter 84 type=asynInt32, name=SHUTTER_STATUS, value=0, status=0
+Parameter 85 type=asynInt32, name=SHUTTER_MODE, value=0, status=0
+Parameter 86 type=asynFloat64, name=SHUTTER_OPEN_DELAY, value=0.000000, status=0
+Parameter 87 type=asynFloat64, name=SHUTTER_CLOSE_DELAY, value=0.000000, status=0
+Parameter 88 type=asynFloat64, name=TEMPERATURE, value=25.000000, status=0
+Parameter 89 type=asynFloat64, name=TEMPERATURE_ACTUAL, value=44.250000, status=0
+Parameter 90 type=asynInt32, name=READ_STATUS, value is undefined
+Parameter 91 type=string, name=STATUS_MESSAGE, value=, status=0
+Parameter 92 type=string, name=STRING_TO_SERVER, value=<not used by driver>, status=0
+Parameter 93 type=string, name=STRING_FROM_SERVER, value=<not used by driver>, status=0
+Parameter 94 type=asynFloat64, name=GC_FRAMERATE, value=10.000000, status=0
+Parameter 95 type=asynInt32, name=GC_FRAMERATE_ENABLE, value=0, status=0
+Parameter 96 type=asynInt32, name=GC_TRIGGER_SOURCE, value=0, status=0
+Parameter 97 type=asynInt32, name=GC_TRIGGER_OVERLAP, value=0, status=0
+Parameter 98 type=asynInt32, name=GC_TRIGGER_SOFTWARE, value=0, status=0
+Parameter 99 type=asynInt32, name=GC_EXPOSURE_MODE, value=0, status=0
+Parameter 100 type=asynInt32, name=GC_EXPOSURE_AUTO, value=1, status=0
+Parameter 101 type=asynInt32, name=GC_GAIN_AUTO, value=1, status=0
+Parameter 102 type=asynInt32, name=GC_PIXEL_FORMAT, value=17301505, status=0
+Parameter 103 type=asynFloat64, name=ARAVIS_COMPLETED, value=36.000000, status=0
+Parameter 104 type=asynFloat64, name=ARAVIS_FAILURES, value=0.000000, status=0
+Parameter 105 type=asynFloat64, name=ARAVIS_UNDERRUNS, value=0.000000, status=0
+Parameter 106 type=asynInt32, name=ARAVIS_FRAME_RETENTION, value=100000, status=0
+Parameter 107 type=asynInt32, name=ARAVIS_MISSING_PKTS, value=0, status=0
+Parameter 108 type=asynInt32, name=ARAVIS_RESENT_PKTS, value=0, status=0
+Parameter 109 type=asynInt32, name=ARAVIS_PKT_RESEND, value=1, status=0
+Parameter 110 type=asynInt32, name=ARAVIS_PKT_TIMEOUT, value=20000, status=0
+Parameter 111 type=asynInt32, name=ARAVIS_LEFTSHIFT, value=1, status=0
+Parameter 112 type=asynInt32, name=ARAVIS_CONNECTION, value=1, status=0
+Parameter 113 type=asynInt32, name=ARAVIS_HWIMAGEMODE, value=0, status=0
+Parameter 114 type=asynInt32, name=ARAVIS_RESET, value=0, status=0
+Parameter 115 type=asynFloat64, name=GC_D_AcquisitionFrameRateAbs, value=10.000000, status=0
+Parameter 116 type=asynFloat64, name=GC_D_AcquisitionFrameRateLimit, value=4.995279, status=0
+Parameter 117 type=asynFloat64, name=GC_D_BalanceRatioAbs, value is undefined
+Parameter 118 type=asynFloat64, name=GC_D_BlackLevel, value=4.000000, status=0
+Parameter 119 type=asynFloat64, name=GC_D_CmvExposureTimePWL1, value is undefined
+Parameter 120 type=asynFloat64, name=GC_D_CmvExposureTimePWL2, value is undefined
+Parameter 121 type=asynFloat64, name=GC_D_ColorTransformationValue, value is undefined
+Parameter 122 type=asynFloat64, name=GC_D_DeviceTemperature, value=44.250000, status=0
+Parameter 123 type=asynFloat64, name=GC_D_ExposureTimeIncrement, value=14.000000, status=0
+Parameter 124 type=asynFloat64, name=GC_D_ExposureTimeAbs, value=0.200004, status=0
+Parameter 125 type=asynFloat64, name=GC_D_GainAutoMax, value=40.000000, status=0
+Parameter 126 type=asynFloat64, name=GC_D_GainAutoMin, value=0.000000, status=0
+Parameter 127 type=asynFloat64, name=GC_D_Gain, value=0.000000, status=0
+Parameter 128 type=asynFloat64, name=GC_D_Gamma, value=1.000000, status=0
+Parameter 129 type=asynFloat64, name=GC_D_Hue, value is undefined
+Parameter 130 type=asynFloat64, name=GC_D_Saturation, value is undefined
+Parameter 131 type=asynFloat64, name=GC_D_TriggerDelayAbs, value=0.000000, status=0
+Parameter 132 type=asynInt32, name=GC_B_ChunkModeActive, value=0, status=0
+Parameter 133 type=asynInt32, name=GC_B_DefectMaskEnable, value is undefined
+Parameter 134 type=asynInt32, name=GC_B_LUTEnable, value=0, status=0
+Parameter 135 type=asynInt32, name=GC_B_ReverseX, value=0, status=0
+Parameter 136 type=asynInt32, name=GC_B_ReverseY, value=0, status=0
+Parameter 137 type=asynInt32, name=GC_B_StreamFrameRateConstrain, value=1, status=0
+Parameter 138 type=asynInt32, name=GC_I_AcquisitionFrameCount, value=1, status=0
+Parameter 139 type=asynInt32, name=GC_I_BalanceWhiteAutoAdjustTol, value is undefined
+Parameter 140 type=asynInt32, name=GC_I_BalanceWhiteAutoRate, value is undefined
+Parameter 141 type=asynInt32, name=GC_I_BinningHorizontal, value=1, status=0
+Parameter 142 type=asynInt32, name=GC_I_BinningVertical, value=1, status=0
+Parameter 143 type=asynInt32, name=GC_I_CmvExposureValuePWL1, value is undefined
+Parameter 144 type=asynInt32, name=GC_I_CmvExposureValuePWL2, value is undefined
+Parameter 145 type=asynInt32, name=GC_I_CmvPWLThreshold1, value is undefined
+Parameter 146 type=asynInt32, name=GC_I_CmvPWLThreshold2, value is undefined
+Parameter 147 type=asynInt32, name=GC_I_DSPSubregionBottom, value=1216, status=0
+Parameter 148 type=asynInt32, name=GC_I_DSPSubregionLeft, value=0, status=0
+Parameter 149 type=asynInt32, name=GC_I_DSPSubregionRight, value=1936, status=0
+Parameter 150 type=asynInt32, name=GC_I_DSPSubregionTop, value=0, status=0
+Parameter 151 type=asynInt32, name=GC_I_DecimationHorizontal, value=1, status=0
+Parameter 152 type=asynInt32, name=GC_I_DecimationVertical, value=1, status=0
+Parameter 153 type=asynInt32, name=GC_I_EventAcquisitionRecordTrigger, value=40004, status=0
+Parameter 154 type=asynInt32, name=GC_I_EventAcquisitionStart, value=40000, status=0
+Parameter 155 type=asynInt32, name=GC_I_EventAcquisitionEnd, value=40001, status=0
+Parameter 156 type=asynInt32, name=GC_I_EventFrameTriggerReady, value=40018, status=0
+Parameter 157 type=asynInt32, name=GC_I_EventLine2FallingEdge, value=40013, status=0
+Parameter 158 type=asynInt32, name=GC_I_EventLine3FallingEdge, value=40015, status=0
+Parameter 159 type=asynInt32, name=GC_I_EventLine4FallingEdge, value=40017, status=0
+Parameter 160 type=asynInt32, name=GC_I_EventLine1FallingEdge, value=40011, status=0
+Parameter 161 type=asynInt32, name=GC_I_EventLine2RisingEdge, value=40012, status=0
+Parameter 162 type=asynInt32, name=GC_I_EventLine3RisingEdge, value=40014, status=0
+Parameter 163 type=asynInt32, name=GC_I_EventLine4RisingEdge, value=40016, status=0
+Parameter 164 type=asynInt32, name=GC_I_EventLine1RisingEdge, value=40010, status=0
+Parameter 165 type=asynInt32, name=GC_I_EventPtpSyncLocked, value=40006, status=0
+Parameter 166 type=asynInt32, name=GC_I_EventError, value=65535, status=0
+Parameter 167 type=asynInt32, name=GC_I_EventExposureEnd, value=40003, status=0
+Parameter 168 type=asynInt32, name=GC_I_EventFrameTrigger, value=40002, status=0
+Parameter 169 type=asynInt32, name=GC_I_EventOverflow, value=65534, status=0
+Parameter 170 type=asynInt32, name=GC_I_EventPtpSyncLost, value=40005, status=0
+Parameter 171 type=asynInt32, name=GC_I_EventsEnable1, value=0, status=0
+Parameter 172 type=asynInt32, name=GC_I_ExposureAutoAdjustTol, value=5, status=0
+Parameter 173 type=asynInt32, name=GC_I_ExposureAutoOutliers, value=0, status=0
+Parameter 174 type=asynInt32, name=GC_I_ExposureAutoTarget, value=50, status=0
+Parameter 175 type=asynInt32, name=GC_I_ExposureAutoMax, value=500000, status=0
+Parameter 176 type=asynInt32, name=GC_I_ExposureAutoMin, value=28, status=0
+Parameter 177 type=asynInt32, name=GC_I_ExposureAutoRate, value=100, status=0
+Parameter 178 type=asynInt32, name=GC_I_ExposureValue, value=200004, status=0
+Parameter 179 type=asynInt32, name=GC_I_FirmwareVerBuild, value=11026, status=0
+Parameter 180 type=asynInt32, name=GC_I_FirmwareVerMajor, value=1, status=0
+Parameter 181 type=asynInt32, name=GC_I_FirmwareVerMinor, value=54, status=0
+Parameter 182 type=asynInt32, name=GC_I_FrameStartTriggerDelay, value=0, status=0
+Parameter 183 type=asynInt32, name=GC_I_GainAutoAdjustTol, value=5, status=0
+Parameter 184 type=asynInt32, name=GC_I_GainAutoOutliers, value=0, status=0
+Parameter 185 type=asynInt32, name=GC_I_GainAutoRate, value=100, status=0
+Parameter 186 type=asynInt32, name=GC_I_GainAutoTarget, value=50, status=0
+Parameter 187 type=asynInt32, name=GC_I_GevSCPSPacketSize, value=1500, status=0
+Parameter 188 type=asynInt32, name=GC_I_GevTimestampTickFrequency, value=1000000000, status=0
+Parameter 189 type=asynInt32, name=GC_I_GevTimestampValue, value=0, status=0
+Parameter 190 type=asynInt32, name=GC_I_HeightMax, value=1216, status=0
+Parameter 191 type=asynInt32, name=GC_I_Height, value=1216, status=0
+Parameter 192 type=asynInt32, name=GC_I_ImageSize, value=2354176, status=0
+Parameter 193 type=asynInt32, name=GC_I_IrisAutoTarget, value=50, status=0
+Parameter 194 type=asynInt32, name=GC_I_IrisVideoLevelMax, value=110, status=0
+Parameter 195 type=asynInt32, name=GC_I_IrisVideoLevelMin, value=90, status=0
+Parameter 196 type=asynInt32, name=GC_I_IrisVideoLevel, value=0, status=0
+Parameter 197 type=asynInt32, name=GC_I_LUTAddress, value=196608, status=0
+Parameter 198 type=asynInt32, name=GC_I_LUTBitDepthIn, value=12, status=0
+Parameter 199 type=asynInt32, name=GC_I_LUTBitDepthOut, value=12, status=0
+Parameter 200 type=asynInt32, name=GC_I_LUTIndex, value=0, status=0
+Parameter 201 type=asynInt32, name=GC_I_LUTSizeBytes, value=8192, status=0
+Parameter 202 type=asynInt32, name=GC_I_LUTValue, value=4095, status=0
+Parameter 203 type=asynInt32, name=GC_I_LensDCDriveStrength, value is undefined
+Parameter 204 type=asynInt32, name=GC_I_LensPIrisFrequency, value is undefined
+Parameter 205 type=asynInt32, name=GC_I_LensPIrisNumSteps, value is undefined
+Parameter 206 type=asynInt32, name=GC_I_LensPIrisPosition, value is undefined
+Parameter 207 type=asynInt32, name=GC_I_NonImagePayloadSize, value=0, status=0
+Parameter 208 type=asynInt32, name=GC_I_OffsetValue, value=4, status=0
+Parameter 209 type=asynInt32, name=GC_I_OffsetX, value=0, status=0
+Parameter 210 type=asynInt32, name=GC_I_OffsetY, value=0, status=0
+Parameter 211 type=asynInt32, name=GC_I_PayloadSize, value=2354176, status=0
+Parameter 212 type=asynInt32, name=GC_I_PtpAcquisitionGateTimeHi, value=0, status=0
+Parameter 213 type=asynInt32, name=GC_I_PtpAcquisitionGateTimeLo, value=0, status=0
+Parameter 214 type=asynInt32, name=GC_I_PtpAcquisitionGateTime, value=0, status=0
+Parameter 215 type=asynInt32, name=GC_I_PvGainAutoMax, value=400, status=0
+Parameter 216 type=asynInt32, name=GC_I_PvGainAutoMin, value=0, status=0
+Parameter 217 type=asynInt32, name=GC_I_PvGainRaw, value=0, status=0
+Parameter 218 type=asynInt32, name=GC_I_RecorderPreEventCount, value=0, status=0
+Parameter 219 type=asynInt32, name=GC_I_RestoreCurrentGain, value is undefined
+Parameter 220 type=asynInt32, name=GC_I_RestoreAllGains, value is undefined
+Parameter 221 type=asynInt32, name=GC_I_SensorBits, value=12, status=0
+Parameter 222 type=asynInt32, name=GC_I_SensorHeight, value=1216, status=0
+Parameter 223 type=asynInt32, name=GC_I_SensorWidth, value=1936, status=0
+Parameter 224 type=asynInt32, name=GC_I_StreamBytesPerSecond, value=115000000, status=0
+Parameter 225 type=asynInt32, name=GC_I_StreamHoldCapacity, value=53, status=0
+Parameter 226 type=asynInt32, name=GC_I_StrobeDelay, value=0, status=0
+Parameter 227 type=asynInt32, name=GC_I_StrobeDuration, value=0, status=0
+Parameter 228 type=asynInt32, name=GC_I_SyncInGlitchFilter, value=0, status=0
+Parameter 229 type=asynInt32, name=GC_I_SyncInLevels, value=0, status=0
+Parameter 230 type=asynInt32, name=GC_I_SyncOutLevels, value=0, status=0
+Parameter 231 type=asynInt32, name=GC_I_Tap1_GainAdjust, value is undefined
+Parameter 232 type=asynInt32, name=GC_I_Tap1_OffsetAdjust, value is undefined
+Parameter 233 type=asynInt32, name=GC_I_Tap2_GainAdjust, value is undefined
+Parameter 234 type=asynInt32, name=GC_I_Tap2_OffsetAdjust, value is undefined
+Parameter 235 type=asynInt32, name=GC_I_Tap3_GainAdjust, value is undefined
+Parameter 236 type=asynInt32, name=GC_I_Tap3_OffsetAdjust, value is undefined
+Parameter 237 type=asynInt32, name=GC_I_Tap4_GainAdjust, value is undefined
+Parameter 238 type=asynInt32, name=GC_I_Tap4_OffsetAdjust, value is undefined
+Parameter 239 type=asynInt32, name=GC_I_TimeStampValueHi, value=0, status=0
+Parameter 240 type=asynInt32, name=GC_I_TimeStampValueLo, value=0, status=0
+Parameter 241 type=asynInt32, name=GC_I_VsubValue, value=0, status=0
+Parameter 242 type=asynInt32, name=GC_I_WhitebalValueBlue, value is undefined
+Parameter 243 type=asynInt32, name=GC_I_WhitebalValueRed, value is undefined
+Parameter 244 type=asynInt32, name=GC_I_WidthMax, value=1936, status=0
+Parameter 245 type=asynInt32, name=GC_I_Width, value=1936, status=0
+Parameter 246 type=asynInt32, name=GC_C_AcquisitionAbort, value is undefined
+Parameter 247 type=asynInt32, name=GC_C_AcquisitionStart, value is undefined
+Parameter 248 type=asynInt32, name=GC_C_AcquisitionStop, value is undefined
+Parameter 249 type=asynInt32, name=GC_C_GevTimestampControlLatch, value is undefined
+Parameter 250 type=asynInt32, name=GC_C_GevTimestampControlReset, value is undefined
+Parameter 251 type=asynInt32, name=GC_C_LUTLoadAll, value is undefined
+Parameter 252 type=asynInt32, name=GC_C_LUTSaveAll, value is undefined
+Parameter 253 type=asynInt32, name=GC_C_TriggerSoftware, value is undefined
+Parameter 254 type=asynInt32, name=GC_C_UserSetLoad, value is undefined
+Parameter 255 type=asynInt32, name=GC_C_UserSetSave, value is undefined
+Parameter 256 type=asynInt32, name=GC_E_AcquisitionMode, value=1, status=0
+Parameter 257 type=asynInt32, name=GC_E_BalanceRatioSelector, value is undefined
+Parameter 258 type=asynInt32, name=GC_E_BalanceWhiteAuto, value is undefined
+Parameter 259 type=asynInt32, name=GC_E_BandwidthControlMode, value=0, status=0
+Parameter 260 type=asynInt32, name=GC_E_BlackLevelSelector, value=0, status=0
+Parameter 261 type=asynInt32, name=GC_E_ColorTransformationMode, value is undefined
+Parameter 262 type=asynInt32, name=GC_E_ColorTransformationSelector, value is undefined
+Parameter 263 type=asynInt32, name=GC_E_ColorTransformationValueSelector, value is undefined
+Parameter 264 type=asynInt32, name=GC_E_DefectMaskColumnEnable, value is undefined
+Parameter 265 type=asynInt32, name=GC_E_DeviceTemperatureSelector, value=1, status=0
+Parameter 266 type=asynInt32, name=GC_E_DeviceScanType, value=0, status=0
+Parameter 267 type=asynInt32, name=GC_E_EventNotification, value=0, status=0
+Parameter 268 type=asynInt32, name=GC_E_EventSelector, value=40000, status=0
+Parameter 269 type=asynInt32, name=GC_E_ExposureAutoAlg, value=0, status=0
+Parameter 270 type=asynInt32, name=GC_E_ExposureAuto, value=1, status=0
+Parameter 271 type=asynInt32, name=GC_E_ExposureModeValue, value=1, status=0
+Parameter 272 type=asynInt32, name=GC_E_ExposureMode, value=0, status=0
+Parameter 273 type=asynInt32, name=GC_E_GainSelector, value=0, status=0
+Parameter 274 type=asynInt32, name=GC_E_IrisMode, value=0, status=0
+Parameter 275 type=asynInt32, name=GC_E_LUTMode, value=0, status=0
+Parameter 276 type=asynInt32, name=GC_E_LUTSelector, value=0, status=0
+Parameter 277 type=asynInt32, name=GC_E_PixelFormat, value=17301505, status=0
+Parameter 278 type=asynInt32, name=GC_E_PtpMode, value=0, status=0
+Parameter 279 type=asynInt32, name=GC_E_PtpStatus, value=2, status=0
+Parameter 280 type=asynInt32, name=GC_E_PvDummyFrameStartTriggerMode, value=-2147483648, status=0
+Parameter 281 type=asynInt32, name=GC_E_PvDummyTriggerSelector, value=0, status=0
+Parameter 282 type=asynInt32, name=GC_E_PvDummyTriggerMode, value=0, status=0
+Parameter 283 type=asynInt32, name=GC_E_SensorType, value=0, status=0
+Parameter 284 type=asynInt32, name=GC_E_StrobeDurationMode, value=0, status=0
+Parameter 285 type=asynInt32, name=GC_E_StreamHoldEnable, value=0, status=0
+Parameter 286 type=asynInt32, name=GC_E_StrobeSource, value=3, status=0
+Parameter 287 type=asynInt32, name=GC_E_SyncInSelector, value=0, status=0
+Parameter 288 type=asynInt32, name=GC_E_SyncOutPolarity, value=0, status=0
+Parameter 289 type=asynInt32, name=GC_E_SyncOutSelector, value=0, status=0
+Parameter 290 type=asynInt32, name=GC_E_SyncOutSource, value=4, status=0
+Parameter 291 type=asynInt32, name=GC_E_TriggerActivation, value=0, status=0
+Parameter 292 type=asynInt32, name=GC_E_TriggerMode, value=1, status=0
+Parameter 293 type=asynInt32, name=GC_E_TriggerOverlap, value=0, status=0
+Parameter 294 type=asynInt32, name=GC_E_TriggerSelector, value=0, status=0
+Parameter 295 type=asynInt32, name=GC_E_UserSetDefaultSelector, value=0, status=0
+Parameter 296 type=asynInt32, name=GC_E_UserSetSelector, value=0, status=0
+Parameter 297 type=string, name=GC_S_DeviceFirmwareVersion, value=00.01.54.11026 , status=0
+Parameter 298 type=string, name=GC_S_DeviceID, value=50-0503373263, status=0
+Parameter 299 type=string, name=GC_S_DeviceModelName, value=Manta G-235B, status=0
+Parameter 300 type=string, name=GC_S_DevicePartNumber, value=E0022572, status=0
+Parameter 301 type=string, name=GC_S_DeviceVendorName, value=Allied Vision Technologies, status=0
+Parameter 302 type=string, name=GC_S_ModelName, value=Manta G-235B, status=0

@@ -1,0 +1,5 @@
+PMAC=           /scratch/pmac
+DEVIOCSTATS=    $(SUPPORT)/devIocStats/3-1-14dls3-1
+AUTOSAVE=       $(SUPPORT)/autosave/5-9dls1
+UTILITY=        $(SUPPORT)/utility/dls2-18
+BL11K = /dls_sw/work/R3.14.12.7/support/BL11K

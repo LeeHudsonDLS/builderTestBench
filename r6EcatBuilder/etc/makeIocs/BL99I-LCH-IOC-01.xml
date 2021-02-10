@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<ethercat.EthercatMaster max_message="150000" name="ECATM" socket="/tmp/scanner"/>
+	<ethercat.EthercatSlave master="ECATM" name="ERIO.0" position="0" type_rev="EK1100 rev 0x00120000"/>
+	<ethercat.EthercatSlave master="ECATM" name="ERIO.1" position="1" type_rev="EK1122 rev 0x00110000"/>
+</components>

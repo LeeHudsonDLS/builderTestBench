@@ -1,10 +1,6 @@
 <?xml version="1.0" ?>
 <components arch="linux-x86_64">
-	<EPICS_BASE.EpicsEnvSet key="EPICS_CA_MAX_ARRAY_BYTES" value="32000000"/>
-	<pmac.pmacAsynIPPort IP="172.23.240.99" name="CLIP01Port"/>
-	<pmac.GeoBrick MovingPoll="50" P="BLTEST-MO-CLIP-01" Port="CLIP01Port" name="CLIP01"/>
-	<pmac.dls_pmac_asyn_motor ADDR="1" DESC="a1" DHLM="15" DLLM="-14.5" DTYP="asynMotor" EGU="mm" M=":A1" MRES="0.0005" P="BLTEST-MO-CLIP-01" PORT="CLIP01" PREC="4" SPORT="CLIP01Port" TWV="0.1" VELO="0.3"/>
-	<pmac.dls_pmac_asyn_motor ADDR="2" DESC="a2" DHLM="15" DLLM="-14.5" EGU="mm" M=":A2" MRES="0.0005" P="BLTEST-MO-CLIP-01" PORT="CLIP01" PREC="4" SPORT="CLIP01Port" TWV="0.1" VELO="0.3"/>
-	<BL11K.benderMove PRE_POS="0.989" motor="BLTEST-MO-CLIP-01:A1" name="PRE1"/>
-	<BL11K.benderMove PRE_POS="0.666" motor="BLTEST-MO-CLIP-01:A2" name="PRE2"/>
+	<tpmac.pmacAsynIPPort IP="172.23.240.99" name="BRICK01Port"/>
+	<tpmac.GeoBrick NAxes="8" Port="BRICK01Port" name="BRICK01"/>
+	<pmacUtil.dls_pmac_asyn_motor ADDR="1" DESC="Diagnostic Stick Y (d1.y)" DHLM="89" DLLM="0" DTYP="asynMotor" EGU="mm" ERES="" HLM="89" LLM="0" M=":STICK:Y" MRES="0.00025" P="BLTEST-LCH-PHDGN-01" PMAC="BLTEST-LCH-STEP-01" PORT="BRICK01" PREC="2" SPORT="BRICK01Port" TWV="1" VELO="3.33" VMAX="3.33" name="D1.Y"/>
 </components>

@@ -10,21 +10,20 @@ if [ "$1" = "-d" ]; then
         EDMDATAFILES="${EDMDATAFILES}${d}:"
     done
     EDMDATAFILES="${EDMDATAFILES}${TOP}/data:"
-    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/adPython/2-1-2/adPythonApp/opi/edl:"
-    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/adUtil/2-26/adUtilApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/adPython/2-1-7/adPythonApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/adUtil/2-28-4/adUtilApp/opi/edl:"
 
     OPTS="-x -eolc"
 else
     OPTS="-x -eolc -noedit"
 fi
 EDMDATAFILES="${EDMDATAFILES}${TOP}/data"
-EDMDATAFILES="${EDMDATAFILES}:/home/jjc62351/work/ADAravis/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ADCore/3-6dls3/data"
-EDMDATAFILES="${EDMDATAFILES}:/home/jjc62351/work/ADGenICam/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/adPython/2-1-2/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/adUtil/2-26/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/autosave/5-9dls1/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ffmpegServer/3-1dls3/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ADAravis/1-2dls8/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ADCore/3-9dls2/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ADGenICam/1-4dls1/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/adPython/2-1-7/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/adUtil/2-28-4/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/ffmpegServer/3-1dls6-4/data"
 
 export EDMDATAFILES
 

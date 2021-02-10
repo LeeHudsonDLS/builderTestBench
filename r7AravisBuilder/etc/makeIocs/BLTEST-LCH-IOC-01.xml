@@ -1,7 +1,5 @@
 <?xml version="1.0" ?>
 <components arch="linux-x86_64">
 	<aravisGigE.aravisCamera ADDR="0" CLASS="AVT_Manta_1_44_4" ID="172.23.240.251" P="BL99I-LCH-OAV-01" PORT="OAV.CAM" R=":CAM:" TIMEOUT="1"/>
-	<adUtil.gdaPlugins CAM="OAV.CAM" HTTP_PORT="8080" P="BL99I-LCH-OAV-01" PORTPREFIX="OAV" name="OAV.PLUGINS"/>
-	<adPython.adPythonPlugin ADDR="0" NDARRAY_PORT="OAV.CAM" P="BL99I-LCH-OAV-01" PORT="OAV.PYP" R=":PYP:" TIMEOUT="1" classname="Template"/>
-	<autosave.Autosave iocName="BLTEST-LCH-IOC-01" name="AS" path="/scratch/old"/>
+	<adUtil.gdaPlugins CAM="OAV.CAM" HTTP_PORT="8080" P="BL99I-LCH-OAV-01" PORTPREFIX="OAV" XSIZE="1936" YSIZE="1216" name="gdaOAV1"/>
 </components>

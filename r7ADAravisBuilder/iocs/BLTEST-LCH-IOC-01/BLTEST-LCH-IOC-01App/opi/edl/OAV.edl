@@ -218,7 +218,7 @@ y 66
 bgColor index 3
 botShadowColor index 0
 displayFileName {
-  0 "AVT_Manta_G235B.edl"
+  0 "ADGenICam.edl"
   1 "NDROI.edl"
   2 "NDStats.edl"
   3 "NDStdArrays.edl"
@@ -238,18 +238,18 @@ noScroll
 numDsps 12
 sizeOfs 5
 symbols {
-  0 "P=BL99I-LCH-OAV-01,R=:CAM:,label=CAM"
-  1 "P=BL99I-LCH-OAV-01,R=:ROI:,label=roi"
-  2 "P=BL99I-LCH-OAV-01,R=:STAT:,label=stat"
-  3 "P=BL99I-LCH-OAV-01,R=:ARR:,label=arr"
-  4 "P=BL99I-LCH-OAV-01,R=:PROC:,label=proc"
-  5 "P=BL99I-LCH-OAV-01,R=:OVER:,label=over"
-  6 "P=BL99I-LCH-OAV-01,R=:FIMG:,label=fimg"
-  7 "P=BL99I-LCH-OAV-01,R=:TIFF:,label=tiff"
-  8 "P=BL99I-LCH-OAV-01,R=:HDF5:,label=hdf"
-  9 "P=BL99I-LCH-OAV-01,R=:MJPG:,label=mjpg"
-  10 "P=BL99I-LCH-OAV-01,R=:PVA:,label=pva"
-  11 "P=BL99I-LCH-OAV-01,R=:PYP:,label=PYP"
+  0 "P=BLTEST-LCH-OAV-01,C=AVT_Manta_G235B,R=:CAM:,label=CAM"
+  1 "P=BLTEST-LCH-OAV-01,R=:ROI:,label=roi"
+  2 "P=BLTEST-LCH-OAV-01,R=:STAT:,label=stat"
+  3 "P=BLTEST-LCH-OAV-01,R=:ARR:,label=arr"
+  4 "P=BLTEST-LCH-OAV-01,R=:PROC:,label=proc"
+  5 "P=BLTEST-LCH-OAV-01,R=:OVER:,label=over"
+  6 "P=BLTEST-LCH-OAV-01,R=:FIMG:,label=fimg"
+  7 "P=BLTEST-LCH-OAV-01,R=:TIFF:,label=tiff"
+  8 "P=BLTEST-LCH-OAV-01,R=:HDF5:,label=hdf"
+  9 "P=BLTEST-LCH-OAV-01,R=:MJPG:,label=mjpg"
+  10 "P=BLTEST-LCH-OAV-01,R=:PVA:,label=pva"
+  11 "P=BLTEST-LCH-OAV-01,R=:PYP:,label=PYP"
 }
 topShadowColor index 0
 endObjectProperties
