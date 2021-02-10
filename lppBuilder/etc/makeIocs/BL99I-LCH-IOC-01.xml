@@ -1,5 +1,8 @@
 <?xml version="1.0" ?>
 <components arch="linux-x86_64">
 	<asyn.AsynIP baud="9600" bits="8" name="LPORT" parity="none" port="localhost:8000" stop="1"/>
-	<laserPuckPointer.laserPuckPointer BL="i03" DEMAND_IN="ss" P="BL99I-LCH-LPP-01" PORT="LPORT" ROBOT="sss" SCAN=".5 second" VERS="2-0" name="LPP"/>
+	<EPICS_BASE.StartupCommand command="asynOctetSetOutputEos LPORT -1 &quot;A&quot;"/>
+	<!--<EPICS_BASE.StartupCommand command="var streamError 1"/>-->
+	<!--<EPICS_BASE.StartupCommand command="var streamDebug 1"/>-->
+	<laserPuckPointer.laserPuckPointer P="BL99I-LCH-LPP-01" PORT="LPORT" name="LPP"/>
 </components>
