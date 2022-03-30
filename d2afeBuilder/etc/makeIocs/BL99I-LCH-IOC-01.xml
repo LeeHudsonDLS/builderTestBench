@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<asyn.AsynIP name="D2AFEport" port="172.23.241.15:7003"/>
+	<d2afe.d2afe P="BL99I-DI-LCH-01" STREAMS_PORT="D2AFEport" name="D2AFE"/>
+</components>
