@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<components arch="linux-x86_64">	
-    <smargon.smargon IP_ADDRESS="172.23.103.173" P="BL03I-MO-SGON-01" PPMAC_NO="1" PPMAC_PORT="PPMAC1" SSH_PORT="SSHP" ZEBRA="BL03I-EA-ZEBRA-01" name="SGON"/>
-	<smargon.fastGridScans CS_NO="1" P="BL03I-MO-SGON-01" PPMAC_PORT="PPMAC1" name="SGON.FGS"/>
-	<smargon.robotInterlocks P="BL03I-MO-SGON-01" PLC_NO="12" PPMAC_PORT="PPMAC1" name="SGON.RINT"/>
-	<smargon.omegaProtection P="BL03I-MO-SGON-01" PPMAC_PORT="PPMAC1" name="SGON.OMEGAPROT"/>
-	
-</components>

@@ -1,4 +1,0 @@
-ARAVISGIGE = $(SUPPORT)/aravisGigE/0-1-15dls8
-ADOPENCV=      $(SUPPORT)/adOpenCV/2-4-6dls1
-FFMPEGSERVER=  $(SUPPORT)/ffmpegServer/2-1-1dls4
-

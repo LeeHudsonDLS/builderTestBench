@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<components arch="linux-x86_64">
-	<asyn.AsynSerial name="tec_serial" port="172.233.103.222:1205"/>
-	<tecPeltier.tecPeltier ADDR="1" P="BL02I-EA-TEC-01" PORT="tec_serial" SCAN="1 second" name="TEC1"/>
-	<tecPeltier.tecPeltier ADDR="3" P="BL02I-EA-TEC-02" PORT="tec_serial" SCAN="1 second" name="TEC2"/>
-	<tecPeltier.tecPeltier ADDR="5" P="BL02I-EA-TEC-03" PORT="tec_serial" SCAN="1 second" name="TEC3"/>
-</components>

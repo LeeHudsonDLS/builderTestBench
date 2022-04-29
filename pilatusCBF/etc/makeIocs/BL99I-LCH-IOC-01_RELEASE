@@ -1,9 +1,0 @@
-
-PILATUS=       /home/jjc62351/work/BL03I/ADPilatus
-DEVIOCSTATS=  $(SUPPORT)/devIocStats/3-1-14dls2-4
-AUTOSAVE=     $(SUPPORT)/autosave/5-0dls6
-FFMPEGSERVER= $(SUPPORT)/ffmpegServer/3-1dls0-1
-PVLOGGING=    $(SUPPORT)/pvlogging/1-3
-
-ARAVISGIGE=    $(SUPPORT)/aravisGigE/2-1dls9
-ADUTIL=        $(SUPPORT)/adUtil/2-16

@@ -1,6 +1,0 @@
-
-FFMPEGSERVER=   $(SUPPORT)/ffmpegServer/3-1dls6-2
-DEVIOCSTATS=    $(SUPPORT)/devIocStats/3-1-14dls3-1
-ARAVISGIGE=     $(SUPPORT)/aravisGigE/3-0dls2
-ADUTIL=     $(SUPPORT)/adUtil/2-28-2
-

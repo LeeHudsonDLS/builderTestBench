@@ -1,3 +1,0 @@
-# Place any example specific dependencies here
-ASYN=          /dls_sw/prod/R3.14.12.7/support/asyn/4-34
-TEC=           /home/jjc62351/work/tecPeltier

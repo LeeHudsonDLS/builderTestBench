@@ -1,7 +1,0 @@
-AUTOSAVE=       $(SUPPORT)/autosave/5-9dls2
-DEVIOCSTATS=    $(SUPPORT)/devIocStats/3-1-14dls3-3
-ADARAVIS=      $(SUPPORT)/ADAravis/1-2dls8
-ADUTIL=        $(SUPPORT)/adUtil/2-28-4
-ADPYTHON=      $(SUPPORT)/adPython/2-1-7
-PVLOGGING=      $(SUPPORT)/pvlogging/1-4
-

@@ -1,7 +1,0 @@
-
-AUTOSAVE=      $(SUPPORT)/autosave/5-9dls2
-FFMPEGSERVER=  $(SUPPORT)/ffmpegServer/3-1dls6-3
-DEVIOCSTATS=   $(SUPPORT)/devIocStats/3-1-14dls3-3
-
-ADUTIL=        $(SUPPORT)/adUtil/2-28-3
-ADARAVIS=      /home/jjc62351/work/ADAravis

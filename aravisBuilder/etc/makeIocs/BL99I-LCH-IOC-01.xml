@@ -1,4 +1,0 @@
-<?xml version="1.0" ?>
-<components arch="linux-x86">
-	<aravisGigE.aravisCamera ADDR="0" CLASS="AVT_Manta_1_44_4" ID="172.23.240.251" P="BL99I-LCH-OAV-01" PORT="OAV.CAM" R=":CAM:" TIMEOUT="1"/>
-</components>

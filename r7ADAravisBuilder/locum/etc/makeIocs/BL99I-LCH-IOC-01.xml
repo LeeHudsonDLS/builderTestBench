@@ -1,5 +1,0 @@
-<?xml version="1.0" ?>
-<components arch="linux-x86_64">
-	<asyn.AsynSerial baud="9600" bits="8" name="LPORT" parity="none" port="/dev/ttyUSB0" stop="1"/>
-	<enzLoCuM4.enzLoCuM4 adr="01" device="BL02I-EA-DIST-01" gda_desc="Dissector Current Amp" gda_name="DIST.AMP" name="ENZ" port="LPORT"/>
-</components>

@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<components arch="linux-x86_64">
-	<autosave.Autosave iocName="BLTEST-LCH-IOC-01" path="/scratch"/>
-	<ADAravis.aravisCamera CLASS="AVT_Manta_G235B" ID="172.23.240.251" P="BL99I-LCH-OAV-01" PORT="OAV.CAM" PV_ALIAS="0" R=":CAM:"/>
-	<adUtil.gdaPlugins CAM="OAV.CAM" HTTP_PORT="8081" P="BL99I-LCH-OAV-01" PORTPREFIX="OAV" XSIZE="1936" YSIZE="1216" name="gdaOAV1"/>
-</components>

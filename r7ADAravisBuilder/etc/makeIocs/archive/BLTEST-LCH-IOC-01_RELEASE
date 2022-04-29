@@ -1,5 +1,0 @@
-
-AUTOSAVE=      $(SUPPORT)/autosave/5-9dls2
-
-ADUTIL=$(SUPPORT)/adUtil/2-28-4
-ADARAVIS=      $(SUPPORT)/ADAravis/1-2dls8

@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<components arch="linux-x86_64">
-	<ADAravis.aravisCamera CLASS="AVT_Manta_G235B" ID="172.23.240.251" P="BLTEST-LCH-OAV-01" PORT="OAV.CAM" PV_ALIAS="1" R=":CAM:"/>
-	<adUtil.gdaPlugins CAM="OAV.CAM" HTTP_PORT="8080" P="BLTEST-LCH-OAV-01" PORTPREFIX="OAV" name="OAV.PLUGINS"/>
-	<adPython.adPythonPlugin ADDR="0" NDARRAY_PORT="OAV.CAM" P="BLTEST-LCH-OAV-01" PORT="OAV.PYP" R=":PYP:" TIMEOUT="1" classname="Template"/>
-	<!--<devIocStats.devIocStatsHelper ioc="BL02I-DI-IOC-05" name="DI5"/>-->
-	<!--<EPICS_BASE.EpicsEnvSet key="EPICS_CA_MAX_ARRAY_BYTES" name="maxArrayBytes" value="3000000"/>-->
-</components>

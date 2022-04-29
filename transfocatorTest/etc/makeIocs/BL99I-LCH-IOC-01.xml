@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<components arch="linux-x86">
-	<!--<devIocStats.devIocStatsHelper ioc="BL22J-MO-IOC-03" name="MOIOC3"/>-->
-	<tpmac.pmacAsynIPPort IP="172.23.240.97" name="BRICK3port"/>
-	<tpmac.GeoBrick NAxes="8" Port="BRICK3port" name="BRICK3"/>
-	<pmacUtil.dls_pmac_asyn_motor_no_coord ADDR="1" DESC="F-switch X" DHLM="11" DIR="0" DLLM="-10" EGU="mm" M=":X" MRES="0.00005" P="BL22J-MO-FSWT-01" PMAC="BL22J-MO-STEP-03" PORT="BRICK3" PREC="5" SPORT="BRICK3port" TWV="0.1" VELO="1"/>
-	<!--<transfocator.transfocator AXIS="5" P="BL99J-MO-FSWT-01" PLC="20" PLC_HOME="23" PLC_IN="22" PLC_MASK="24" PLC_OUT="21" PORT="BRICK3port" Q="" name="FSWITCH"/>-->
-</components>
