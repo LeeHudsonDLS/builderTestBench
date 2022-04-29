@@ -1,0 +1,2812 @@
+record(ai, "SR99C-DI-PTG-01:MASK")
+{
+    field(VAL, "127")
+    field(PINI, "YES")
+}record(bi, "SR99C-DI-EBPM-01:AFE:SAVE_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-01:AFE:SAVE_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-01:AFE:SAVE_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-01:AFE:SAVE_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-01:AFE:SAVE_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-01:AFE:SAVE_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_cal(1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-01:AFE:LOAD_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-01:AFE:LOAD_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-01:AFE:LOAD_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-01:AFE:LOAD_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-01:AFE:LOAD_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-01:AFE:LOAD_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_cal(1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-01:AFE:SAVE_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-01:AFE:SAVE_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-01:AFE:SAVE_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-01:AFE:SAVE_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-01:AFE:SAVE_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-01:AFE:SAVE_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_att(1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-01:AFE:LOAD_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-01:AFE:LOAD_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-01:AFE:LOAD_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-01:AFE:LOAD_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-01:AFE:LOAD_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-01:AFE:LOAD_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_att(1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-01:AFE:RESET_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-01:AFE:RESET_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-01:AFE:RESET_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-01:AFE:RESET_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-01:AFE:RESET.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-01:AFE:RESET")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto reset(1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-02:AFE:SAVE_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-02:AFE:SAVE_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-02:AFE:SAVE_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-02:AFE:SAVE_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-02:AFE:SAVE_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-02:AFE:SAVE_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_cal(2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-02:AFE:LOAD_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-02:AFE:LOAD_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-02:AFE:LOAD_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-02:AFE:LOAD_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-02:AFE:LOAD_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-02:AFE:LOAD_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_cal(2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-02:AFE:SAVE_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-02:AFE:SAVE_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-02:AFE:SAVE_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-02:AFE:SAVE_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-02:AFE:SAVE_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-02:AFE:SAVE_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_att(2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-02:AFE:LOAD_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-02:AFE:LOAD_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-02:AFE:LOAD_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-02:AFE:LOAD_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-02:AFE:LOAD_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-02:AFE:LOAD_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_att(2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-02:AFE:RESET_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-02:AFE:RESET_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-02:AFE:RESET_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-02:AFE:RESET_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-02:AFE:RESET.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-02:AFE:RESET")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto reset(2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-03:AFE:SAVE_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-03:AFE:SAVE_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-03:AFE:SAVE_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-03:AFE:SAVE_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-03:AFE:SAVE_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-03:AFE:SAVE_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_cal(3,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-03:AFE:LOAD_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-03:AFE:LOAD_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-03:AFE:LOAD_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-03:AFE:LOAD_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-03:AFE:LOAD_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-03:AFE:LOAD_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_cal(3,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-03:AFE:SAVE_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-03:AFE:SAVE_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-03:AFE:SAVE_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-03:AFE:SAVE_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-03:AFE:SAVE_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-03:AFE:SAVE_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_att(3,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-03:AFE:LOAD_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-03:AFE:LOAD_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-03:AFE:LOAD_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-03:AFE:LOAD_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-03:AFE:LOAD_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-03:AFE:LOAD_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_att(3,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-03:AFE:RESET_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-03:AFE:RESET_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-03:AFE:RESET_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-03:AFE:RESET_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-03:AFE:RESET.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-03:AFE:RESET")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto reset(3,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-04:AFE:SAVE_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-04:AFE:SAVE_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-04:AFE:SAVE_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-04:AFE:SAVE_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-04:AFE:SAVE_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-04:AFE:SAVE_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_cal(4,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-04:AFE:LOAD_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-04:AFE:LOAD_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-04:AFE:LOAD_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-04:AFE:LOAD_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-04:AFE:LOAD_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-04:AFE:LOAD_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_cal(4,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-04:AFE:SAVE_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-04:AFE:SAVE_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-04:AFE:SAVE_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-04:AFE:SAVE_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-04:AFE:SAVE_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-04:AFE:SAVE_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_att(4,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-04:AFE:LOAD_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-04:AFE:LOAD_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-04:AFE:LOAD_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-04:AFE:LOAD_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-04:AFE:LOAD_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-04:AFE:LOAD_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_att(4,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-04:AFE:RESET_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-04:AFE:RESET_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-04:AFE:RESET_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-04:AFE:RESET_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-04:AFE:RESET.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-04:AFE:RESET")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto reset(4,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-05:AFE:SAVE_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-05:AFE:SAVE_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-05:AFE:SAVE_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-05:AFE:SAVE_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-05:AFE:SAVE_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-05:AFE:SAVE_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_cal(5,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-05:AFE:LOAD_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-05:AFE:LOAD_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-05:AFE:LOAD_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-05:AFE:LOAD_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-05:AFE:LOAD_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-05:AFE:LOAD_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_cal(5,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-05:AFE:SAVE_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-05:AFE:SAVE_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-05:AFE:SAVE_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-05:AFE:SAVE_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-05:AFE:SAVE_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-05:AFE:SAVE_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_att(5,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-05:AFE:LOAD_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-05:AFE:LOAD_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-05:AFE:LOAD_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-05:AFE:LOAD_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-05:AFE:LOAD_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-05:AFE:LOAD_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_att(5,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-05:AFE:RESET_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-05:AFE:RESET_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-05:AFE:RESET_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-05:AFE:RESET_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-05:AFE:RESET.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-05:AFE:RESET")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto reset(5,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-06:AFE:SAVE_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-06:AFE:SAVE_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-06:AFE:SAVE_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-06:AFE:SAVE_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-06:AFE:SAVE_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-06:AFE:SAVE_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_cal(6,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-06:AFE:LOAD_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-06:AFE:LOAD_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-06:AFE:LOAD_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-06:AFE:LOAD_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-06:AFE:LOAD_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-06:AFE:LOAD_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_cal(6,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-06:AFE:SAVE_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-06:AFE:SAVE_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-06:AFE:SAVE_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-06:AFE:SAVE_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-06:AFE:SAVE_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-06:AFE:SAVE_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_att(6,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-06:AFE:LOAD_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-06:AFE:LOAD_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-06:AFE:LOAD_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-06:AFE:LOAD_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-06:AFE:LOAD_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-06:AFE:LOAD_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_att(6,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-06:AFE:RESET_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-06:AFE:RESET_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-06:AFE:RESET_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-06:AFE:RESET_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-06:AFE:RESET.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-06:AFE:RESET")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto reset(6,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-07:AFE:SAVE_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-07:AFE:SAVE_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-07:AFE:SAVE_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-07:AFE:SAVE_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-07:AFE:SAVE_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-07:AFE:SAVE_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_cal(7,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-07:AFE:LOAD_CAL_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-07:AFE:LOAD_CAL_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-07:AFE:LOAD_CAL_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-07:AFE:LOAD_CAL_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-07:AFE:LOAD_CAL.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-07:AFE:LOAD_CAL")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_cal(7,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-07:AFE:SAVE_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-07:AFE:SAVE_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-07:AFE:SAVE_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-07:AFE:SAVE_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-07:AFE:SAVE_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-07:AFE:SAVE_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto save_att(7,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-07:AFE:LOAD_ATT_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-07:AFE:LOAD_ATT_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-07:AFE:LOAD_ATT_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-07:AFE:LOAD_ATT_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-07:AFE:LOAD_ATT.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-07:AFE:LOAD_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto load_att(7,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(bi, "SR99C-DI-EBPM-07:AFE:RESET_B")
+{
+  field(SCAN, "Passive")
+  field(FLNK, "SR99C-DI-EBPM-07:AFE:RESET_PROC")
+}
+
+record(calcout, "SR99C-DI-EBPM-07:AFE:RESET_PROC")
+{
+  field(INPA, "SR99C-DI-EBPM-07:AFE:RESET_B")
+  field(CALC, "A")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "SR99C-DI-EBPM-07:AFE:RESET.PROC")
+}
+
+record(ao, "SR99C-DI-EBPM-07:AFE:RESET")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto reset(7,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH1_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(1,1,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH1_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(1,1,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH2_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(1,2,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH2_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(1,2,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH3_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(1,3,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH3_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(1,3,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH4_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(1,4,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH4_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(1,4,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:PILOT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(1,5,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH1_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(1,1,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH1_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(1,1,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH2_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(1,2,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH2_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(1,2,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH3_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(1,3,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH3_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(1,3,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH4_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(1,4,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CH4_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(1,4,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:PILOT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(1,5,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:CH1_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(1,1,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:CH1_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(1,1,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:CH2_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(1,2,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:CH2_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(1,2,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:CH3_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(1,3,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:CH3_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(1,3,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:CH4_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(1,4,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:CH4_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(1,4,2,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:PILOT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(1,5,1,SR99C-DI-EBPM-01:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH1_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(2,1,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH1_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(2,1,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH2_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(2,2,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH2_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(2,2,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH3_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(2,3,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH3_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(2,3,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH4_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(2,4,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH4_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(2,4,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:PILOT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(2,5,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH1_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(2,1,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH1_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(2,1,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH2_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(2,2,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH2_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(2,2,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH3_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(2,3,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH3_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(2,3,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH4_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(2,4,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CH4_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(2,4,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:PILOT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(2,5,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CAL:CH1_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(2,1,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CAL:CH1_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(2,1,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CAL:CH2_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(2,2,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CAL:CH2_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(2,2,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CAL:CH3_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(2,3,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CAL:CH3_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(2,3,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CAL:CH4_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(2,4,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CAL:CH4_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(2,4,2,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-02:AFE:CAL:PILOT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(2,5,1,SR99C-DI-EBPM-02:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH1_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(3,1,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH1_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(3,1,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH2_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(3,2,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH2_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(3,2,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH3_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(3,3,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH3_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(3,3,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH4_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(3,4,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH4_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(3,4,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:PILOT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(3,5,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH1_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(3,1,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH1_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(3,1,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH2_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(3,2,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH2_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(3,2,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH3_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(3,3,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH3_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(3,3,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH4_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(3,4,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CH4_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(3,4,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:PILOT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(3,5,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CAL:CH1_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(3,1,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CAL:CH1_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(3,1,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CAL:CH2_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(3,2,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CAL:CH2_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(3,2,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CAL:CH3_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(3,3,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CAL:CH3_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(3,3,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CAL:CH4_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(3,4,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CAL:CH4_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(3,4,2,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-03:AFE:CAL:PILOT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(3,5,1,SR99C-DI-EBPM-03:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH1_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(4,1,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH1_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(4,1,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH2_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(4,2,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH2_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(4,2,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH3_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(4,3,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH3_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(4,3,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH4_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(4,4,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH4_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(4,4,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:PILOT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(4,5,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH1_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(4,1,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH1_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(4,1,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH2_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(4,2,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH2_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(4,2,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH3_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(4,3,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH3_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(4,3,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH4_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(4,4,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CH4_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(4,4,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:PILOT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(4,5,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CAL:CH1_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(4,1,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CAL:CH1_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(4,1,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CAL:CH2_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(4,2,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CAL:CH2_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(4,2,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CAL:CH3_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(4,3,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CAL:CH3_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(4,3,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CAL:CH4_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(4,4,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CAL:CH4_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(4,4,2,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-04:AFE:CAL:PILOT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(4,5,1,SR99C-DI-EBPM-04:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH1_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(5,1,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH1_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(5,1,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH2_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(5,2,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH2_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(5,2,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH3_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(5,3,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH3_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(5,3,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH4_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(5,4,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH4_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(5,4,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:PILOT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(5,5,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH1_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(5,1,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH1_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(5,1,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH2_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(5,2,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH2_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(5,2,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH3_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(5,3,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH3_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(5,3,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH4_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(5,4,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CH4_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(5,4,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:PILOT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(5,5,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CAL:CH1_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(5,1,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CAL:CH1_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(5,1,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CAL:CH2_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(5,2,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CAL:CH2_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(5,2,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CAL:CH3_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(5,3,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CAL:CH3_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(5,3,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CAL:CH4_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(5,4,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CAL:CH4_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(5,4,2,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-05:AFE:CAL:PILOT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(5,5,1,SR99C-DI-EBPM-05:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH1_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(6,1,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH1_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(6,1,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH2_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(6,2,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH2_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(6,2,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH3_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(6,3,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH3_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(6,3,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH4_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(6,4,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH4_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(6,4,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:PILOT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(6,5,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH1_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(6,1,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH1_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(6,1,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH2_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(6,2,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH2_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(6,2,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH3_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(6,3,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH3_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(6,3,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH4_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(6,4,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CH4_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(6,4,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:PILOT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(6,5,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CAL:CH1_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(6,1,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CAL:CH1_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(6,1,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CAL:CH2_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(6,2,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CAL:CH2_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(6,2,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CAL:CH3_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(6,3,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CAL:CH3_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(6,3,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CAL:CH4_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(6,4,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CAL:CH4_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(6,4,2,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-06:AFE:CAL:PILOT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(6,5,1,SR99C-DI-EBPM-06:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH1_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(7,1,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH1_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(7,1,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH2_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(7,2,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH2_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(7,2,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH3_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(7,3,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH3_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(7,3,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH4_IN_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(7,4,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH4_OUT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(7,4,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:PILOT_ATT")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set(7,5,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH1_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(7,1,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH1_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(7,1,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH2_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(7,2,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH2_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(7,2,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH3_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(7,3,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH3_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(7,3,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH4_IN_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(7,4,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CH4_OUT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(7,4,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:PILOT_ATT_RAW")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_set_raw(7,5,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CAL:CH1_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(7,1,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CAL:CH1_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(7,1,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CAL:CH2_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(7,2,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CAL:CH2_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(7,2,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CAL:CH3_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(7,3,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CAL:CH3_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(7,3,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CAL:CH4_IN_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(7,4,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CAL:CH4_OUT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(7,4,2,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-07:AFE:CAL:PILOT_ATT_OFF")
+{
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto att_offset_set(7,5,1,SR99C-DI-EBPM-07:AFE:RESP) D2AFEport")
+}record(ao, "SR99C-DI-EBPM-01:AFE:OUT_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-01:AFE:OUT_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-01:AFE:OUT_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-01:AFE:CH1_OUT_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-01:AFE:CH2_OUT_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-01:AFE:CH3_OUT_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-01:AFE:CH4_OUT_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-01:AFE:OUT_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-01:AFE:CH1_OUT_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-01:AFE:CH2_OUT_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-01:AFE:CH3_OUT_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-01:AFE:CH4_OUT_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-01:AFE:OUT_ATT CP")
+}record(ao, "SR99C-DI-EBPM-01:AFE:IN_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-01:AFE:IN_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-01:AFE:IN_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-01:AFE:CH1_IN_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-01:AFE:CH2_IN_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-01:AFE:CH3_IN_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-01:AFE:CH4_IN_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-01:AFE:IN_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-01:AFE:CH1_IN_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-01:AFE:CH2_IN_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-01:AFE:CH3_IN_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-01:AFE:CH4_IN_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-01:AFE:IN_ATT CP")
+}record(ao, "SR99C-DI-EBPM-02:AFE:OUT_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-02:AFE:OUT_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-02:AFE:OUT_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-02:AFE:CH1_OUT_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-02:AFE:CH2_OUT_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-02:AFE:CH3_OUT_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-02:AFE:CH4_OUT_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-02:AFE:OUT_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-02:AFE:CH1_OUT_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-02:AFE:CH2_OUT_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-02:AFE:CH3_OUT_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-02:AFE:CH4_OUT_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-02:AFE:OUT_ATT CP")
+}record(ao, "SR99C-DI-EBPM-02:AFE:IN_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-02:AFE:IN_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-02:AFE:IN_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-02:AFE:CH1_IN_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-02:AFE:CH2_IN_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-02:AFE:CH3_IN_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-02:AFE:CH4_IN_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-02:AFE:IN_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-02:AFE:CH1_IN_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-02:AFE:CH2_IN_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-02:AFE:CH3_IN_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-02:AFE:CH4_IN_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-02:AFE:IN_ATT CP")
+}record(ao, "SR99C-DI-EBPM-03:AFE:OUT_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-03:AFE:OUT_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-03:AFE:OUT_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-03:AFE:CH1_OUT_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-03:AFE:CH2_OUT_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-03:AFE:CH3_OUT_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-03:AFE:CH4_OUT_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-03:AFE:OUT_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-03:AFE:CH1_OUT_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-03:AFE:CH2_OUT_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-03:AFE:CH3_OUT_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-03:AFE:CH4_OUT_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-03:AFE:OUT_ATT CP")
+}record(ao, "SR99C-DI-EBPM-03:AFE:IN_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-03:AFE:IN_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-03:AFE:IN_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-03:AFE:CH1_IN_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-03:AFE:CH2_IN_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-03:AFE:CH3_IN_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-03:AFE:CH4_IN_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-03:AFE:IN_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-03:AFE:CH1_IN_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-03:AFE:CH2_IN_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-03:AFE:CH3_IN_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-03:AFE:CH4_IN_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-03:AFE:IN_ATT CP")
+}record(ao, "SR99C-DI-EBPM-04:AFE:OUT_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-04:AFE:OUT_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-04:AFE:OUT_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-04:AFE:CH1_OUT_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-04:AFE:CH2_OUT_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-04:AFE:CH3_OUT_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-04:AFE:CH4_OUT_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-04:AFE:OUT_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-04:AFE:CH1_OUT_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-04:AFE:CH2_OUT_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-04:AFE:CH3_OUT_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-04:AFE:CH4_OUT_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-04:AFE:OUT_ATT CP")
+}record(ao, "SR99C-DI-EBPM-04:AFE:IN_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-04:AFE:IN_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-04:AFE:IN_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-04:AFE:CH1_IN_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-04:AFE:CH2_IN_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-04:AFE:CH3_IN_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-04:AFE:CH4_IN_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-04:AFE:IN_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-04:AFE:CH1_IN_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-04:AFE:CH2_IN_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-04:AFE:CH3_IN_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-04:AFE:CH4_IN_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-04:AFE:IN_ATT CP")
+}record(ao, "SR99C-DI-EBPM-05:AFE:OUT_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-05:AFE:OUT_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-05:AFE:OUT_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-05:AFE:CH1_OUT_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-05:AFE:CH2_OUT_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-05:AFE:CH3_OUT_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-05:AFE:CH4_OUT_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-05:AFE:OUT_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-05:AFE:CH1_OUT_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-05:AFE:CH2_OUT_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-05:AFE:CH3_OUT_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-05:AFE:CH4_OUT_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-05:AFE:OUT_ATT CP")
+}record(ao, "SR99C-DI-EBPM-05:AFE:IN_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-05:AFE:IN_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-05:AFE:IN_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-05:AFE:CH1_IN_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-05:AFE:CH2_IN_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-05:AFE:CH3_IN_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-05:AFE:CH4_IN_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-05:AFE:IN_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-05:AFE:CH1_IN_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-05:AFE:CH2_IN_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-05:AFE:CH3_IN_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-05:AFE:CH4_IN_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-05:AFE:IN_ATT CP")
+}record(ao, "SR99C-DI-EBPM-06:AFE:OUT_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-06:AFE:OUT_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-06:AFE:OUT_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-06:AFE:CH1_OUT_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-06:AFE:CH2_OUT_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-06:AFE:CH3_OUT_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-06:AFE:CH4_OUT_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-06:AFE:OUT_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-06:AFE:CH1_OUT_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-06:AFE:CH2_OUT_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-06:AFE:CH3_OUT_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-06:AFE:CH4_OUT_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-06:AFE:OUT_ATT CP")
+}record(ao, "SR99C-DI-EBPM-06:AFE:IN_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-06:AFE:IN_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-06:AFE:IN_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-06:AFE:CH1_IN_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-06:AFE:CH2_IN_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-06:AFE:CH3_IN_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-06:AFE:CH4_IN_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-06:AFE:IN_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-06:AFE:CH1_IN_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-06:AFE:CH2_IN_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-06:AFE:CH3_IN_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-06:AFE:CH4_IN_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-06:AFE:IN_ATT CP")
+}record(ao, "SR99C-DI-EBPM-07:AFE:OUT_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-07:AFE:OUT_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-07:AFE:OUT_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-07:AFE:CH1_OUT_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-07:AFE:CH2_OUT_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-07:AFE:CH3_OUT_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-07:AFE:CH4_OUT_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-07:AFE:OUT_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-07:AFE:CH1_OUT_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-07:AFE:CH2_OUT_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-07:AFE:CH3_OUT_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-07:AFE:CH4_OUT_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-07:AFE:OUT_ATT CP")
+}record(ao, "SR99C-DI-EBPM-07:AFE:IN_ATT")
+{
+    field(PINI, "NO")
+    field(OUT, "SR99C-DI-EBPM-07:AFE:IN_ATT_FAN PP")
+}
+
+record(dfanout, "SR99C-DI-EBPM-07:AFE:IN_ATT_FAN") {
+    field(OUTA, "SR99C-DI-EBPM-07:AFE:CH1_IN_ATT PP")
+    field(OUTB, "SR99C-DI-EBPM-07:AFE:CH2_IN_ATT PP")
+    field(OUTC, "SR99C-DI-EBPM-07:AFE:CH3_IN_ATT PP")
+    field(OUTD, "SR99C-DI-EBPM-07:AFE:CH4_IN_ATT PP")
+    field(OMSL, "supervisory")
+}
+
+record(calc, "SR99C-DI-EBPM-07:AFE:IN_ATT_VALID") {
+    field(DESC, "description")
+    field(CALC, "(A=E)&(B=E)&(C=E)&(D=E)")
+    field(INPA, "SR99C-DI-EBPM-07:AFE:CH1_IN_ATT_RBV CP")
+    field(INPB, "SR99C-DI-EBPM-07:AFE:CH2_IN_ATT_RBV CP")
+    field(INPC, "SR99C-DI-EBPM-07:AFE:CH3_IN_ATT_RBV CP")
+    field(INPD, "SR99C-DI-EBPM-07:AFE:CH4_IN_ATT_RBV CP")
+    field(INPE, "SR99C-DI-EBPM-07:AFE:IN_ATT CP")
+}
+# % gui, D2AFE01.TOP, edm, d2afe_top.edl, P=SR99C-DI-EBPM-01
+
+record(ao, "SR99C-DI-EBPM-01:AFE:MON")
+{
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto mon(1,SR99C-DI-EBPM-01:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-01:AFE:CH1_TEMP"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH2_TEMP"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH3_TEMP"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH4_TEMP"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:RF1_DBM"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:RF2_DBM"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:RF3_DBM"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:RF4_DBM"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:RADSENSE"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:12V_MON"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:5V_MON"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:I_MON"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:UPTIME"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:BUFF_PEAK"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH1_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH1_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH2_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH2_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH3_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH3_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH4_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH4_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:PILOT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH1_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH1_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH2_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH2_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH3_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH3_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH4_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CH4_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:PILOT_ATT_RBV"){}
+
+######################
+# Request firmware details
+record(stringout, "SR99C-DI-EBPM-01:AFE:FW_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_fw(1,SR99C-DI-EBPM-01:AFE) D2AFEport")
+  field(PINI, "YES")
+  field(FLNK, "SR99C-DI-EBPM-01:AFE:EID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-01:AFE:HARDWARE"){}
+record(stringin, "SR99C-DI-EBPM-01:AFE:MCU"){}
+record(stringin, "SR99C-DI-EBPM-01:AFE:FW_VER"){}
+record(stringin, "SR99C-DI-EBPM-01:AFE:BUILD_DATE"){}
+record(stringin, "SR99C-DI-EBPM-01:AFE:BUILD_TIME"){}
+######################
+
+
+record(stringout, "SR99C-DI-EBPM-01:AFE:EID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_eid(1,SR99C-DI-EBPM-01:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-01:AFE:CALID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-01:AFE:EID"){}
+
+
+record(stringout, "SR99C-DI-EBPM-01:AFE:CALID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_calid(1,SR99C-DI-EBPM-01:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-02:AFE:FW_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-01:AFE:CALID"){}
+
+record(stringin, "SR99C-DI-EBPM-01:AFE:EMPTY") {
+  field(DISP, "1")
+}
+
+######################
+# Display the response for selected commands for 2 seconds before clearing
+record(seq, "SR99C-DI-EBPM-01:AFE:RESP_CLR_DELAY") {
+  field(SELM, "All")
+  field(DLY1, "2.0")
+  field(DOL1, "1")
+  field(LNK1, "SR99C-DI-EBPM-01:AFE:RESP_CLR.PROC PP")
+}
+
+record(stringout, "SR99C-DI-EBPM-01:AFE:RESP_CLR") {
+  field(VAL, "")
+  field(OUT, "SR99C-DI-EBPM-01:AFE:RESP PP")
+}
+
+record(stringin, "SR99C-DI-EBPM-01:AFE:RESP") {
+  field(FLNK, "SR99C-DI-EBPM-01:AFE:RESP_CLR_DELAY PP")
+}
+# % gui, D2AFE02.TOP, edm, d2afe_top.edl, P=SR99C-DI-EBPM-02
+
+record(ao, "SR99C-DI-EBPM-02:AFE:MON")
+{
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto mon(2,SR99C-DI-EBPM-02:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-02:AFE:CH1_TEMP"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH2_TEMP"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH3_TEMP"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH4_TEMP"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:RF1_DBM"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:RF2_DBM"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:RF3_DBM"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:RF4_DBM"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:RADSENSE"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:12V_MON"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:5V_MON"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:I_MON"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:UPTIME"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:BUFF_PEAK"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH1_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH1_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH2_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH2_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH3_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH3_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH4_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH4_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:PILOT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH1_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH1_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH2_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH2_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH3_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH3_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH4_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CH4_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:PILOT_ATT_RBV"){}
+
+######################
+# Request firmware details
+record(stringout, "SR99C-DI-EBPM-02:AFE:FW_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_fw(2,SR99C-DI-EBPM-02:AFE) D2AFEport")
+  field(PINI, "NO")
+  field(FLNK, "SR99C-DI-EBPM-02:AFE:EID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-02:AFE:HARDWARE"){}
+record(stringin, "SR99C-DI-EBPM-02:AFE:MCU"){}
+record(stringin, "SR99C-DI-EBPM-02:AFE:FW_VER"){}
+record(stringin, "SR99C-DI-EBPM-02:AFE:BUILD_DATE"){}
+record(stringin, "SR99C-DI-EBPM-02:AFE:BUILD_TIME"){}
+######################
+
+
+record(stringout, "SR99C-DI-EBPM-02:AFE:EID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_eid(2,SR99C-DI-EBPM-02:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-02:AFE:CALID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-02:AFE:EID"){}
+
+
+record(stringout, "SR99C-DI-EBPM-02:AFE:CALID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_calid(2,SR99C-DI-EBPM-02:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-03:AFE:FW_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-02:AFE:CALID"){}
+
+record(stringin, "SR99C-DI-EBPM-02:AFE:EMPTY") {
+  field(DISP, "1")
+}
+
+######################
+# Display the response for selected commands for 2 seconds before clearing
+record(seq, "SR99C-DI-EBPM-02:AFE:RESP_CLR_DELAY") {
+  field(SELM, "All")
+  field(DLY1, "2.0")
+  field(DOL1, "1")
+  field(LNK1, "SR99C-DI-EBPM-02:AFE:RESP_CLR.PROC PP")
+}
+
+record(stringout, "SR99C-DI-EBPM-02:AFE:RESP_CLR") {
+  field(VAL, "")
+  field(OUT, "SR99C-DI-EBPM-02:AFE:RESP PP")
+}
+
+record(stringin, "SR99C-DI-EBPM-02:AFE:RESP") {
+  field(FLNK, "SR99C-DI-EBPM-02:AFE:RESP_CLR_DELAY PP")
+}
+# % gui, D2AFE03.TOP, edm, d2afe_top.edl, P=SR99C-DI-EBPM-03
+
+record(ao, "SR99C-DI-EBPM-03:AFE:MON")
+{
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto mon(3,SR99C-DI-EBPM-03:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-03:AFE:CH1_TEMP"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH2_TEMP"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH3_TEMP"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH4_TEMP"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:RF1_DBM"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:RF2_DBM"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:RF3_DBM"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:RF4_DBM"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:RADSENSE"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:12V_MON"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:5V_MON"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:I_MON"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:UPTIME"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:BUFF_PEAK"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH1_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH1_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH2_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH2_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH3_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH3_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH4_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH4_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:PILOT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH1_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH1_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH2_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH2_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH3_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH3_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH4_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CH4_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:PILOT_ATT_RBV"){}
+
+######################
+# Request firmware details
+record(stringout, "SR99C-DI-EBPM-03:AFE:FW_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_fw(3,SR99C-DI-EBPM-03:AFE) D2AFEport")
+  field(PINI, "NO")
+  field(FLNK, "SR99C-DI-EBPM-03:AFE:EID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-03:AFE:HARDWARE"){}
+record(stringin, "SR99C-DI-EBPM-03:AFE:MCU"){}
+record(stringin, "SR99C-DI-EBPM-03:AFE:FW_VER"){}
+record(stringin, "SR99C-DI-EBPM-03:AFE:BUILD_DATE"){}
+record(stringin, "SR99C-DI-EBPM-03:AFE:BUILD_TIME"){}
+######################
+
+
+record(stringout, "SR99C-DI-EBPM-03:AFE:EID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_eid(3,SR99C-DI-EBPM-03:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-03:AFE:CALID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-03:AFE:EID"){}
+
+
+record(stringout, "SR99C-DI-EBPM-03:AFE:CALID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_calid(3,SR99C-DI-EBPM-03:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-04:AFE:FW_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-03:AFE:CALID"){}
+
+record(stringin, "SR99C-DI-EBPM-03:AFE:EMPTY") {
+  field(DISP, "1")
+}
+
+######################
+# Display the response for selected commands for 2 seconds before clearing
+record(seq, "SR99C-DI-EBPM-03:AFE:RESP_CLR_DELAY") {
+  field(SELM, "All")
+  field(DLY1, "2.0")
+  field(DOL1, "1")
+  field(LNK1, "SR99C-DI-EBPM-03:AFE:RESP_CLR.PROC PP")
+}
+
+record(stringout, "SR99C-DI-EBPM-03:AFE:RESP_CLR") {
+  field(VAL, "")
+  field(OUT, "SR99C-DI-EBPM-03:AFE:RESP PP")
+}
+
+record(stringin, "SR99C-DI-EBPM-03:AFE:RESP") {
+  field(FLNK, "SR99C-DI-EBPM-03:AFE:RESP_CLR_DELAY PP")
+}
+# % gui, D2AFE04.TOP, edm, d2afe_top.edl, P=SR99C-DI-EBPM-04
+
+record(ao, "SR99C-DI-EBPM-04:AFE:MON")
+{
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto mon(4,SR99C-DI-EBPM-04:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-04:AFE:CH1_TEMP"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH2_TEMP"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH3_TEMP"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH4_TEMP"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:RF1_DBM"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:RF2_DBM"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:RF3_DBM"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:RF4_DBM"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:RADSENSE"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:12V_MON"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:5V_MON"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:I_MON"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:UPTIME"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:BUFF_PEAK"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH1_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH1_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH2_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH2_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH3_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH3_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH4_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH4_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:PILOT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH1_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH1_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH2_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH2_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH3_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH3_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH4_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CH4_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:PILOT_ATT_RBV"){}
+
+######################
+# Request firmware details
+record(stringout, "SR99C-DI-EBPM-04:AFE:FW_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_fw(4,SR99C-DI-EBPM-04:AFE) D2AFEport")
+  field(PINI, "NO")
+  field(FLNK, "SR99C-DI-EBPM-04:AFE:EID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-04:AFE:HARDWARE"){}
+record(stringin, "SR99C-DI-EBPM-04:AFE:MCU"){}
+record(stringin, "SR99C-DI-EBPM-04:AFE:FW_VER"){}
+record(stringin, "SR99C-DI-EBPM-04:AFE:BUILD_DATE"){}
+record(stringin, "SR99C-DI-EBPM-04:AFE:BUILD_TIME"){}
+######################
+
+
+record(stringout, "SR99C-DI-EBPM-04:AFE:EID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_eid(4,SR99C-DI-EBPM-04:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-04:AFE:CALID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-04:AFE:EID"){}
+
+
+record(stringout, "SR99C-DI-EBPM-04:AFE:CALID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_calid(4,SR99C-DI-EBPM-04:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-05:AFE:FW_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-04:AFE:CALID"){}
+
+record(stringin, "SR99C-DI-EBPM-04:AFE:EMPTY") {
+  field(DISP, "1")
+}
+
+######################
+# Display the response for selected commands for 2 seconds before clearing
+record(seq, "SR99C-DI-EBPM-04:AFE:RESP_CLR_DELAY") {
+  field(SELM, "All")
+  field(DLY1, "2.0")
+  field(DOL1, "1")
+  field(LNK1, "SR99C-DI-EBPM-04:AFE:RESP_CLR.PROC PP")
+}
+
+record(stringout, "SR99C-DI-EBPM-04:AFE:RESP_CLR") {
+  field(VAL, "")
+  field(OUT, "SR99C-DI-EBPM-04:AFE:RESP PP")
+}
+
+record(stringin, "SR99C-DI-EBPM-04:AFE:RESP") {
+  field(FLNK, "SR99C-DI-EBPM-04:AFE:RESP_CLR_DELAY PP")
+}
+# % gui, D2AFE05.TOP, edm, d2afe_top.edl, P=SR99C-DI-EBPM-05
+
+record(ao, "SR99C-DI-EBPM-05:AFE:MON")
+{
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto mon(5,SR99C-DI-EBPM-05:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-05:AFE:CH1_TEMP"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH2_TEMP"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH3_TEMP"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH4_TEMP"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:RF1_DBM"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:RF2_DBM"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:RF3_DBM"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:RF4_DBM"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:RADSENSE"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:12V_MON"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:5V_MON"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:I_MON"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:UPTIME"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:BUFF_PEAK"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH1_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH1_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH2_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH2_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH3_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH3_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH4_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH4_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:PILOT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH1_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH1_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH2_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH2_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH3_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH3_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH4_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CH4_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:PILOT_ATT_RBV"){}
+
+######################
+# Request firmware details
+record(stringout, "SR99C-DI-EBPM-05:AFE:FW_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_fw(5,SR99C-DI-EBPM-05:AFE) D2AFEport")
+  field(PINI, "NO")
+  field(FLNK, "SR99C-DI-EBPM-05:AFE:EID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-05:AFE:HARDWARE"){}
+record(stringin, "SR99C-DI-EBPM-05:AFE:MCU"){}
+record(stringin, "SR99C-DI-EBPM-05:AFE:FW_VER"){}
+record(stringin, "SR99C-DI-EBPM-05:AFE:BUILD_DATE"){}
+record(stringin, "SR99C-DI-EBPM-05:AFE:BUILD_TIME"){}
+######################
+
+
+record(stringout, "SR99C-DI-EBPM-05:AFE:EID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_eid(5,SR99C-DI-EBPM-05:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-05:AFE:CALID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-05:AFE:EID"){}
+
+
+record(stringout, "SR99C-DI-EBPM-05:AFE:CALID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_calid(5,SR99C-DI-EBPM-05:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-06:AFE:FW_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-05:AFE:CALID"){}
+
+record(stringin, "SR99C-DI-EBPM-05:AFE:EMPTY") {
+  field(DISP, "1")
+}
+
+######################
+# Display the response for selected commands for 2 seconds before clearing
+record(seq, "SR99C-DI-EBPM-05:AFE:RESP_CLR_DELAY") {
+  field(SELM, "All")
+  field(DLY1, "2.0")
+  field(DOL1, "1")
+  field(LNK1, "SR99C-DI-EBPM-05:AFE:RESP_CLR.PROC PP")
+}
+
+record(stringout, "SR99C-DI-EBPM-05:AFE:RESP_CLR") {
+  field(VAL, "")
+  field(OUT, "SR99C-DI-EBPM-05:AFE:RESP PP")
+}
+
+record(stringin, "SR99C-DI-EBPM-05:AFE:RESP") {
+  field(FLNK, "SR99C-DI-EBPM-05:AFE:RESP_CLR_DELAY PP")
+}
+# % gui, D2AFE06.TOP, edm, d2afe_top.edl, P=SR99C-DI-EBPM-06
+
+record(ao, "SR99C-DI-EBPM-06:AFE:MON")
+{
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto mon(6,SR99C-DI-EBPM-06:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-06:AFE:CH1_TEMP"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH2_TEMP"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH3_TEMP"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH4_TEMP"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:RF1_DBM"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:RF2_DBM"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:RF3_DBM"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:RF4_DBM"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:RADSENSE"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:12V_MON"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:5V_MON"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:I_MON"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:UPTIME"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:BUFF_PEAK"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH1_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH1_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH2_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH2_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH3_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH3_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH4_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH4_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:PILOT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH1_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH1_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH2_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH2_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH3_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH3_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH4_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CH4_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:PILOT_ATT_RBV"){}
+
+######################
+# Request firmware details
+record(stringout, "SR99C-DI-EBPM-06:AFE:FW_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_fw(6,SR99C-DI-EBPM-06:AFE) D2AFEport")
+  field(PINI, "NO")
+  field(FLNK, "SR99C-DI-EBPM-06:AFE:EID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-06:AFE:HARDWARE"){}
+record(stringin, "SR99C-DI-EBPM-06:AFE:MCU"){}
+record(stringin, "SR99C-DI-EBPM-06:AFE:FW_VER"){}
+record(stringin, "SR99C-DI-EBPM-06:AFE:BUILD_DATE"){}
+record(stringin, "SR99C-DI-EBPM-06:AFE:BUILD_TIME"){}
+######################
+
+
+record(stringout, "SR99C-DI-EBPM-06:AFE:EID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_eid(6,SR99C-DI-EBPM-06:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-06:AFE:CALID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-06:AFE:EID"){}
+
+
+record(stringout, "SR99C-DI-EBPM-06:AFE:CALID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_calid(6,SR99C-DI-EBPM-06:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-07:AFE:FW_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-06:AFE:CALID"){}
+
+record(stringin, "SR99C-DI-EBPM-06:AFE:EMPTY") {
+  field(DISP, "1")
+}
+
+######################
+# Display the response for selected commands for 2 seconds before clearing
+record(seq, "SR99C-DI-EBPM-06:AFE:RESP_CLR_DELAY") {
+  field(SELM, "All")
+  field(DLY1, "2.0")
+  field(DOL1, "1")
+  field(LNK1, "SR99C-DI-EBPM-06:AFE:RESP_CLR.PROC PP")
+}
+
+record(stringout, "SR99C-DI-EBPM-06:AFE:RESP_CLR") {
+  field(VAL, "")
+  field(OUT, "SR99C-DI-EBPM-06:AFE:RESP PP")
+}
+
+record(stringin, "SR99C-DI-EBPM-06:AFE:RESP") {
+  field(FLNK, "SR99C-DI-EBPM-06:AFE:RESP_CLR_DELAY PP")
+}
+# % gui, D2AFE07.TOP, edm, d2afe_top.edl, P=SR99C-DI-EBPM-07
+
+record(ao, "SR99C-DI-EBPM-07:AFE:MON")
+{
+  field(SCAN, "Passive")
+  field(PINI, "YES")
+  field(DTYP, "stream")
+  field(OUT,  "@d2afe.proto mon(7,SR99C-DI-EBPM-07:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-07:AFE:CH1_TEMP"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH2_TEMP"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH3_TEMP"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH4_TEMP"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:RF1_DBM"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:RF2_DBM"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:RF3_DBM"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:RF4_DBM"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:RADSENSE"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:12V_MON"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:5V_MON"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:I_MON"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:UPTIME"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:BUFF_PEAK"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH1_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH1_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH2_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH2_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH3_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH3_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH4_IN_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH4_OUT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:PILOT_ATT_RAW_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH1_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH1_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH2_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH2_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH3_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH3_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH4_IN_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CH4_OUT_ATT_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:PILOT_ATT_RBV"){}
+
+######################
+# Request firmware details
+record(stringout, "SR99C-DI-EBPM-07:AFE:FW_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_fw(7,SR99C-DI-EBPM-07:AFE) D2AFEport")
+  field(PINI, "NO")
+  field(FLNK, "SR99C-DI-EBPM-07:AFE:EID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-07:AFE:HARDWARE"){}
+record(stringin, "SR99C-DI-EBPM-07:AFE:MCU"){}
+record(stringin, "SR99C-DI-EBPM-07:AFE:FW_VER"){}
+record(stringin, "SR99C-DI-EBPM-07:AFE:BUILD_DATE"){}
+record(stringin, "SR99C-DI-EBPM-07:AFE:BUILD_TIME"){}
+######################
+
+
+record(stringout, "SR99C-DI-EBPM-07:AFE:EID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_eid(7,SR99C-DI-EBPM-07:AFE) D2AFEport")
+  field(FLNK, "SR99C-DI-EBPM-07:AFE:CALID_REQUEST")
+}
+record(stringin, "SR99C-DI-EBPM-07:AFE:EID"){}
+
+
+record(stringout, "SR99C-DI-EBPM-07:AFE:CALID_REQUEST") {
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(OUT, "@d2afe.proto read_calid(7,SR99C-DI-EBPM-07:AFE) D2AFEport")
+}
+record(stringin, "SR99C-DI-EBPM-07:AFE:CALID"){}
+
+record(stringin, "SR99C-DI-EBPM-07:AFE:EMPTY") {
+  field(DISP, "1")
+}
+
+######################
+# Display the response for selected commands for 2 seconds before clearing
+record(seq, "SR99C-DI-EBPM-07:AFE:RESP_CLR_DELAY") {
+  field(SELM, "All")
+  field(DLY1, "2.0")
+  field(DOL1, "1")
+  field(LNK1, "SR99C-DI-EBPM-07:AFE:RESP_CLR.PROC PP")
+}
+
+record(stringout, "SR99C-DI-EBPM-07:AFE:RESP_CLR") {
+  field(VAL, "")
+  field(OUT, "SR99C-DI-EBPM-07:AFE:RESP PP")
+}
+
+record(stringin, "SR99C-DI-EBPM-07:AFE:RESP") {
+  field(FLNK, "SR99C-DI-EBPM-07:AFE:RESP_CLR_DELAY PP")
+}record(ao, "SR99C-DI-EBPM-01:AFE:CAL:MON")
+{
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(PINI, "YES")
+  field(OUT,  "@d2afe.proto calmon(1,SR99C-DI-EBPM-01:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH1_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH1_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH2_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH2_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH3_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH3_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH4_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH4_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH1_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH1_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH2_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH2_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH3_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH3_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH4_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH4_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:RADS_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:RADS_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:VCC12_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:VCC12_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:VCC5_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:VCC5_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:ICC_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:ICC_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:MCU_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:MCU_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:VCC3_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:VCC3_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH1_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH1_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH2_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH2_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH3_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH3_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH4_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:CH4_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-01:AFE:CAL:PILOT_ATT_OFF_RBV"){}
+
+record(ao, "SR99C-DI-EBPM-02:AFE:CAL:MON")
+{
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(PINI, "YES")
+  field(OUT,  "@d2afe.proto calmon(2,SR99C-DI-EBPM-02:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH1_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH1_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH2_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH2_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH3_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH3_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH4_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH4_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH1_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH1_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH2_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH2_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH3_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH3_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH4_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH4_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:RADS_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:RADS_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:VCC12_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:VCC12_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:VCC5_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:VCC5_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:ICC_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:ICC_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:MCU_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:MCU_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:VCC3_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:VCC3_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH1_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH1_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH2_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH2_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH3_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH3_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH4_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:CH4_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-02:AFE:CAL:PILOT_ATT_OFF_RBV"){}
+
+record(ao, "SR99C-DI-EBPM-03:AFE:CAL:MON")
+{
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(PINI, "YES")
+  field(OUT,  "@d2afe.proto calmon(3,SR99C-DI-EBPM-03:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH1_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH1_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH2_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH2_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH3_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH3_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH4_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH4_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH1_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH1_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH2_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH2_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH3_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH3_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH4_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH4_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:RADS_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:RADS_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:VCC12_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:VCC12_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:VCC5_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:VCC5_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:ICC_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:ICC_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:MCU_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:MCU_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:VCC3_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:VCC3_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH1_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH1_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH2_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH2_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH3_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH3_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH4_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:CH4_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-03:AFE:CAL:PILOT_ATT_OFF_RBV"){}
+
+record(ao, "SR99C-DI-EBPM-04:AFE:CAL:MON")
+{
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(PINI, "YES")
+  field(OUT,  "@d2afe.proto calmon(4,SR99C-DI-EBPM-04:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH1_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH1_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH2_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH2_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH3_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH3_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH4_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH4_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH1_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH1_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH2_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH2_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH3_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH3_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH4_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH4_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:RADS_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:RADS_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:VCC12_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:VCC12_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:VCC5_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:VCC5_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:ICC_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:ICC_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:MCU_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:MCU_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:VCC3_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:VCC3_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH1_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH1_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH2_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH2_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH3_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH3_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH4_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:CH4_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-04:AFE:CAL:PILOT_ATT_OFF_RBV"){}
+
+record(ao, "SR99C-DI-EBPM-05:AFE:CAL:MON")
+{
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(PINI, "YES")
+  field(OUT,  "@d2afe.proto calmon(5,SR99C-DI-EBPM-05:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH1_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH1_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH2_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH2_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH3_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH3_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH4_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH4_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH1_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH1_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH2_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH2_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH3_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH3_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH4_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH4_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:RADS_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:RADS_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:VCC12_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:VCC12_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:VCC5_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:VCC5_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:ICC_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:ICC_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:MCU_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:MCU_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:VCC3_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:VCC3_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH1_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH1_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH2_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH2_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH3_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH3_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH4_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:CH4_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-05:AFE:CAL:PILOT_ATT_OFF_RBV"){}
+
+record(ao, "SR99C-DI-EBPM-06:AFE:CAL:MON")
+{
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(PINI, "YES")
+  field(OUT,  "@d2afe.proto calmon(6,SR99C-DI-EBPM-06:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH1_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH1_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH2_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH2_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH3_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH3_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH4_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH4_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH1_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH1_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH2_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH2_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH3_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH3_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH4_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH4_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:RADS_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:RADS_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:VCC12_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:VCC12_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:VCC5_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:VCC5_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:ICC_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:ICC_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:MCU_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:MCU_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:VCC3_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:VCC3_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH1_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH1_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH2_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH2_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH3_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH3_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH4_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:CH4_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-06:AFE:CAL:PILOT_ATT_OFF_RBV"){}
+
+record(ao, "SR99C-DI-EBPM-07:AFE:CAL:MON")
+{
+  field(SCAN, "Passive")
+  field(DTYP, "stream")
+  field(PINI, "YES")
+  field(OUT,  "@d2afe.proto calmon(7,SR99C-DI-EBPM-07:AFE) D2AFEport")
+}
+
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH1_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH1_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH2_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH2_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH3_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH3_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH4_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH4_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH1_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH1_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH2_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH2_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH3_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH3_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH4_RF_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH4_RF_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:RADS_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:RADS_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:VCC12_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:VCC12_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:VCC5_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:VCC5_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:ICC_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:ICC_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:MCU_TEMP_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:MCU_TEMP_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:VCC3_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:VCC3_SLO_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH1_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH1_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH2_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH2_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH3_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH3_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH4_IN_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:CH4_OUT_ATT_OFF_RBV"){}
+record(ai, "SR99C-DI-EBPM-07:AFE:CAL:PILOT_ATT_OFF_RBV"){}
+
+record(aSub, "SR99C-DI-EBPM-01:AFE:FW_CHECK"){
+    field(SNAM, "checkFW")
+    field(SCAN, "10 second")
+    field(INPA, "SR99C-DI-EBPM-01:AFE:FW_VER")
+    field(FTA, "STRING")
+    field(OUTA, "SR99C-DI-EBPM-01:AFE:FW_VER_CORRECT PP")
+    field(FTVA, "USHORT")
+}
+
+record(bi, "SR99C-DI-EBPM-01:AFE:FW_VER_CORRECT") {   
+    field(ZNAM, "NO")   
+    field(ONAM, "YES")     
+    field(ZSV, "MAJOR")   
+    field(OSV, "NO_ALARM")
+}record(aSub, "SR99C-DI-EBPM-02:AFE:FW_CHECK"){
+    field(SNAM, "checkFW")
+    field(SCAN, "10 second")
+    field(INPA, "SR99C-DI-EBPM-02:AFE:FW_VER")
+    field(FTA, "STRING")
+    field(OUTA, "SR99C-DI-EBPM-02:AFE:FW_VER_CORRECT PP")
+    field(FTVA, "USHORT")
+}
+
+record(bi, "SR99C-DI-EBPM-02:AFE:FW_VER_CORRECT") {   
+    field(ZNAM, "NO")   
+    field(ONAM, "YES")     
+    field(ZSV, "MAJOR")   
+    field(OSV, "NO_ALARM")
+}record(aSub, "SR99C-DI-EBPM-03:AFE:FW_CHECK"){
+    field(SNAM, "checkFW")
+    field(SCAN, "10 second")
+    field(INPA, "SR99C-DI-EBPM-03:AFE:FW_VER")
+    field(FTA, "STRING")
+    field(OUTA, "SR99C-DI-EBPM-03:AFE:FW_VER_CORRECT PP")
+    field(FTVA, "USHORT")
+}
+
+record(bi, "SR99C-DI-EBPM-03:AFE:FW_VER_CORRECT") {   
+    field(ZNAM, "NO")   
+    field(ONAM, "YES")     
+    field(ZSV, "MAJOR")   
+    field(OSV, "NO_ALARM")
+}record(aSub, "SR99C-DI-EBPM-04:AFE:FW_CHECK"){
+    field(SNAM, "checkFW")
+    field(SCAN, "10 second")
+    field(INPA, "SR99C-DI-EBPM-04:AFE:FW_VER")
+    field(FTA, "STRING")
+    field(OUTA, "SR99C-DI-EBPM-04:AFE:FW_VER_CORRECT PP")
+    field(FTVA, "USHORT")
+}
+
+record(bi, "SR99C-DI-EBPM-04:AFE:FW_VER_CORRECT") {   
+    field(ZNAM, "NO")   
+    field(ONAM, "YES")     
+    field(ZSV, "MAJOR")   
+    field(OSV, "NO_ALARM")
+}record(aSub, "SR99C-DI-EBPM-05:AFE:FW_CHECK"){
+    field(SNAM, "checkFW")
+    field(SCAN, "10 second")
+    field(INPA, "SR99C-DI-EBPM-05:AFE:FW_VER")
+    field(FTA, "STRING")
+    field(OUTA, "SR99C-DI-EBPM-05:AFE:FW_VER_CORRECT PP")
+    field(FTVA, "USHORT")
+}
+
+record(bi, "SR99C-DI-EBPM-05:AFE:FW_VER_CORRECT") {   
+    field(ZNAM, "NO")   
+    field(ONAM, "YES")     
+    field(ZSV, "MAJOR")   
+    field(OSV, "NO_ALARM")
+}record(aSub, "SR99C-DI-EBPM-06:AFE:FW_CHECK"){
+    field(SNAM, "checkFW")
+    field(SCAN, "10 second")
+    field(INPA, "SR99C-DI-EBPM-06:AFE:FW_VER")
+    field(FTA, "STRING")
+    field(OUTA, "SR99C-DI-EBPM-06:AFE:FW_VER_CORRECT PP")
+    field(FTVA, "USHORT")
+}
+
+record(bi, "SR99C-DI-EBPM-06:AFE:FW_VER_CORRECT") {   
+    field(ZNAM, "NO")   
+    field(ONAM, "YES")     
+    field(ZSV, "MAJOR")   
+    field(OSV, "NO_ALARM")
+}record(aSub, "SR99C-DI-EBPM-07:AFE:FW_CHECK"){
+    field(SNAM, "checkFW")
+    field(SCAN, "10 second")
+    field(INPA, "SR99C-DI-EBPM-07:AFE:FW_VER")
+    field(FTA, "STRING")
+    field(OUTA, "SR99C-DI-EBPM-07:AFE:FW_VER_CORRECT PP")
+    field(FTVA, "USHORT")
+}
+
+record(bi, "SR99C-DI-EBPM-07:AFE:FW_VER_CORRECT") {   
+    field(ZNAM, "NO")   
+    field(ONAM, "YES")     
+    field(ZSV, "MAJOR")   
+    field(OSV, "NO_ALARM")
+}record(asyn,"BL99I-LCH-ASYN-01")
+{
+    field(DTYP,"asynRecordDevice")
+    field(PORT,"D2AFEport")
+    field(ADDR,"0")
+    field(OMAX,"10")
+    field(IMAX,"10")
+}
+

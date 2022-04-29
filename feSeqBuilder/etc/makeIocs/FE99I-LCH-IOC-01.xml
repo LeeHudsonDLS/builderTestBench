@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<dlsPLC.vacValveDebounce addr="1" device="TEST1" port="" vlvcc="TEST"/>
+</components>

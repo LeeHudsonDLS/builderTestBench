@@ -1,5 +1,22 @@
 <?xml version="1.0" ?>
 <components arch="linux-x86_64">
-	<asyn.AsynIP name="D2AFEport" port="172.23.241.15:7003"/>
-	<d2afe.d2afe P="BL99I-DI-LCH-01" STREAMS_PORT="D2AFEport" name="D2AFE"/>
+	<asyn.AsynIP name="D2AFEport" port="ts-di-lan-06:10001"/>
+	<d2afe.d2ptg D2AFE_MASK="4095" P="SR99C-DI-PTG-01" STREAMS_PORT="D2AFEport" name="D2PTG"/>
+	<d2afe.d2afe ADDR="1" P="SR99C-DI-EBPM-01" PTG="D2PTG" name="D2AFE01"/>
+	<d2afe.d2afe ADDR="2" P="SR99C-DI-EBPM-02" PTG="D2PTG" name="D2AFE02"/>
+	<d2afe.d2afe ADDR="3" P="SR99C-DI-EBPM-03" PTG="D2PTG" name="D2AFE03"/>
+	<d2afe.d2afe ADDR="4" P="SR99C-DI-EBPM-04" PTG="D2PTG" name="D2AFE04"/>
+	<d2afe.d2afe ADDR="5" P="SR99C-DI-EBPM-05" PTG="D2PTG" name="D2AFE05"/>
+	<d2afe.d2afe ADDR="6" P="SR99C-DI-EBPM-06" PTG="D2PTG" name="D2AFE06"/>
+	<d2afe.d2afe ADDR="7" P="SR99C-DI-EBPM-07" PTG="D2PTG" name="D2AFE07"/>
+	<d2afe.d2afe ADDR="8" P="SR99C-DI-EBPM-08" PTG="D2PTG" name="D2AFE08"/>
+	<d2afe.d2afe ADDR="9" P="SR99C-DI-EBPM-09" PTG="D2PTG" name="D2AFE09"/>
+	<d2afe.d2afe ADDR="10" P="SR99C-DI-EBPM-10" PTG="D2PTG" name="D2AFE10"/>
+	<d2afe.d2afe ADDR="11" P="SR99C-DI-EBPM-11" PTG="D2PTG" name="D2AFE11"/>
+	<d2afe.d2afe ADDR="12" P="SR99C-DI-EBPM-12" PTG="D2PTG" name="D2AFE12"/>
+	<asyn.auto_asynRecord ADDR="0" IMAX="10" OMAX="10" P="BL99I" PORT="D2AFEport" R="-LCH-ASYN-01" name="AG"/>
+	<!--<EPICS_BASE.StartupCommand command="asynSetTraceIOMask(&quot;D2AFEport&quot;, -1, 0x2)"/>-->
+	<!--<EPICS_BASE.StartupCommand command="asynSetTraceMask(&quot;D2AFEport&quot;, -1, 0x9)"/>-->
+	<!--<EPICS_BASE.StartupCommand command="asynSetTraceInfoMask(&quot;D2AFEport&quot;, -1, 0x3)"/>-->
+	<!--<EPICS_BASE.StartupCommand command="asynSetTraceIOTruncateSize(&quot;D2AFEport&quot;, -1, 1024)"/>-->
 </components>

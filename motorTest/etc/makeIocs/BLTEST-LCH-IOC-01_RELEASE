@@ -1,5 +1,3 @@
-TPMAC=          $(SUPPORT)/tpmac/3-11dls18
-PMACCOORD=      $(WORK)/pmacCoord
-PMACUTIL=       $(WORK)/jjc62351/pmacUtil
+USERIO=       $(WORK)/userIO
 
 
