@@ -1,0 +1,4 @@
+FE=$(SUPPORT)/FE/9-13
+include $(SUPPORT)/FE/9-13/configure/RELEASE.tpmac
+
+

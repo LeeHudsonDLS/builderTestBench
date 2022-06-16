@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<autosave.Autosave iocName="BLTEST-LCH-IOC-01" path="/scratch/autosave"/>
+	<tpmac.pmacAsynIPPort IP="172.23.240.99" name="BRICK1port"/>
+	<tpmac.GeoBrick Port="BRICK1port" name="BRICK1"/>
+	<pmacUtil.dls_pmac_asyn_motor_no_coord ACCL="0.5" ADDR="1" ADEL="0.0125" BACC="" BDST="0" BVEL="0" DESC="XBPM X axis motor" DHLM="5.0" DIR="0" DLLM="-5.0" DTYP="asynMotor" EGU="mm" ERES="0.001" FOFF="0" HLSV="MAJOR" HOME="$(P)" INIT="" JAR="" M=":XMOT" MRES="0.001" NTM="1" OFF="0" P="FE99I-DI-PBPM-01" PORT="BRICK1" PREC="5" RDBD="0.00125" RRES="0.001" RTRY="3" SPORT="BRICK1port" SREV="12800" TWV="1.0" UEIP="1" VBAS="0" VELO="0.5" VMAX="$(VELO)" gda_desc="$(DESC)" gda_name="" name="XBPM1.X"/>
+	<tpmac.pmacSetOpenLoopEncoderAxis Controller="BRICK1" DriveAxis="1" EncoderAxis="9"/>
+	<EPICS_BASE.StartupCommand command="asynSetTraceIOMask(&quot;BRICK1port&quot;, -1, 0x1)" post_init="False"/>
+	<EPICS_BASE.StartupCommand command="asynSetTraceMask(&quot;BRICK1port&quot;, -1, 0x3)" post_init="False"/>
+</components>
