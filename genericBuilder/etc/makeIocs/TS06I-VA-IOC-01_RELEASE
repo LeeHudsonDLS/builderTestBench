@@ -1,0 +1,8 @@
+SSCAN=          $(SUPPORT)/sscan/2-11-3dls1
+CALC=           $(SUPPORT)/calc/3-7-3
+IOCINFO = $(SUPPORT)/IOCinfo/4-2
+VXSTATS = $(SUPPORT)/devIocStats/3-1-14dls3-1
+UTILITY = $(SUPPORT)/utility/dls2-18
+
+FINS = $(SUPPORT)/FINS/3-12
+PLC = $(SUPPORT)/dlsPLC/3-0-32

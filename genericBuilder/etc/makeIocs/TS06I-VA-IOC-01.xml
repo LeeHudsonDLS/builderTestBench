@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86_64">
+	<EPICS_BASE.EpicsEnvSet key="EPICS_CA_SERVER_PORT" value="6064"/>
+	<EPICS_BASE.EpicsEnvSet key="EPICS_CA_REPEATER_PORT" value="6065"/>
+	<ether_ip.EtherIPInit device="BL99I-LCH-IOC-01:PLC" ip="172.23.241.68" name="PLC" port="pport"/>
+	<FINS.FINSUDPInit ip="172.23.241.68" name="finsport" simulation="None"/>
+	<dlsPLC.fastVacuumMaster dom="FE06I" eip_port="pport" fins_port="finsport" name="FV.MASTER"/>
+	<dlsPLC.fastVacuumChannel id="01" img="FE06I-VA-IMG-01" master="FV.MASTER" name="FV.G1"/>
+	<dlsPLC.fastVacuumChannel id="02" img="FE06I-VA-IMG-02" master="FV.MASTER" name="FV.G2"/>
+	<dlsPLC.fastVacuumChannel id="03" img="FE06I-VA-IMG-03" master="FV.MASTER" name="FV.G3"/>
+	<dlsPLC.fastVacuumChannel id="04" img="FE06I-VA-IMG-04" master="FV.MASTER" name="FV.G4"/>
+	<dlsPLC.fastVacuumChannel id="05" img="FE06I-VA-IMG-05" master="FV.MASTER" name="FV.G5"/>
+	<dlsPLC.fastVacuumChannel id="06" img="FE06I-VA-IMG-06" master="FV.MASTER" name="FV.G6"/>
+	<dlsPLC.fastVacuumChannel id="07" img="FE06I-VA-IMG-07" master="FV.MASTER" name="FV.G7"/>
+	<dlsPLC.fastVacuumChannel id="08" img="FE06I-VA-IMG-08" master="FV.MASTER" name="FV.G8"/>
+	<dlsPLC.fastVacuumChannel id="09" img="FE06I-VA-IMG-09" master="FV.MASTER" name="FV.G9"/>
+	<dlsPLC.fastVacuumChannel id="10" img="FE06I-VA-IMG-10" master="FV.MASTER" name="FV.G10"/>
+</components>
